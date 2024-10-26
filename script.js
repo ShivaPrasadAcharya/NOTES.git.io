@@ -22,31 +22,32 @@ function formatDateTime(dateTimeStr) {
     return `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
 }
 
-// Default notes
-let notes = [
-    {
-        id: '20241026-100000-000-0001',
-        title: "Welcome to Smart Notes!",
-        subtitle: "Getting Started Guide",
-        content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
-        created: "2024-10-26T10:00:00.000Z",
-        lastModified: "2024-10-26T10:00:00.000Z",
-        category: "General",
-        tags: ["welcome", "guide"],
-        pinned: true
-    },
-    {
-        id: '20241026-100100-000-0002',
-        title: "Important Features",
-        subtitle: "What's New",
-        content: "1. Colorful note cards\n2. Search functionality\n3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
-        created: "2024-10-26T10:01:00.000Z",
-        lastModified: "2024-10-26T10:01:00.000Z",
-        category: "Features",
-        tags: ["features", "new"],
-        pinned: false
+// Function to save notes to localStorage
+function saveToLocalStorage() {
+    try {
+        localStorage.setItem('notes', JSON.stringify(notes));
+    } catch (error) {
+        console.error('Error saving to localStorage:', error);
     }
-];
+}
+
+// Function to load notes from localStorage
+function loadFromLocalStorage() {
+    try {
+        const storedNotes = localStorage.getItem('notes');
+        if (storedNotes) {
+            notes = JSON.parse(storedNotes);
+            return true;
+        }
+        return false;
+    } catch (error) {
+        console.error('Error loading from localStorage:', error);
+        return false;
+    }
+}
+
+// Initialize notes array
+let notes = [];
 
 // Copy data functionality
 function copyData() {
@@ -118,15 +119,34 @@ function hideForm() {
     document.getElementById('noteNumber').disabled = false;
 }
 
+// Note number input validation
+document.getElementById('noteNumber').addEventListener('input', function(e) {
+    // Remove non-digit characters
+    this.value = this.value.replace(/\D/g, '');
+    
+    // Limit to 4 digits
+    if (this.value.length > 4) {
+        this.value = this.value.slice(0, 4);
+    }
+    
+    // Toggle validation classes
+    if (/^\d{4}$/.test(this.value)) {
+        this.classList.remove('is-invalid');
+        this.classList.add('is-valid');
+    } else {
+        this.classList.remove('is-valid');
+        this.classList.add('is-invalid');
+    }
+});
+
 ['noteNumber', 'title', 'subtitle', 'content'].forEach(id => {
     document.getElementById(id).addEventListener('input', updateDataPreview);
 });
 
-// Replace the form submission part in script.js
+// Form submission handler
 document.getElementById('noteForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Get input values
     const userNumber = document.getElementById('noteNumber').value.trim();
     const title = document.getElementById('title').value.trim();
     const subtitle = document.getElementById('subtitle').value.trim();
@@ -160,40 +180,23 @@ document.getElementById('noteForm').addEventListener('submit', function(e) {
                 content,
                 lastModified: new Date().toISOString()
             };
+            saveToLocalStorage();
         }
     } else {
         const noteData = generateData(userNumber, title, subtitle, content);
         notes.push(noteData);
+        saveToLocalStorage();
     }
     
     renderNotes();
     hideForm();
 });
 
-// Add this validation for the note number input
-document.getElementById('noteNumber').addEventListener('input', function(e) {
-    // Remove non-digit characters
-    this.value = this.value.replace(/\D/g, '');
-    
-    // Limit to 4 digits
-    if (this.value.length > 4) {
-        this.value = this.value.slice(0, 4);
-    }
-    
-    // Toggle validation classes
-    if (/^\d{4}$/.test(this.value)) {
-        this.classList.remove('is-invalid');
-        this.classList.add('is-valid');
-    } else {
-        this.classList.remove('is-valid');
-        this.classList.add('is-invalid');
-    }
-});
-
 function togglePin(id) {
     const note = notes.find(n => n.id === id);
     if (note) {
         note.pinned = !note.pinned;
+        saveToLocalStorage();
         renderNotes();
     }
 }
@@ -231,6 +234,7 @@ function toggleContent(contentId, noteId) {
 function deleteNote(id) {
     if (confirm('Are you sure you want to delete this note?')) {
         notes = notes.filter(note => note.id !== id);
+        saveToLocalStorage();
         renderNotes();
     }
 }
@@ -306,5 +310,33 @@ function renderNotes(searchTerm = '') {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
+    // Load saved notes or set defaults if none exist
+    if (!loadFromLocalStorage()) {
+        notes = [
+            {
+                id: '20241026-100000-000-0001',
+                title: "Welcome to Smart Notes!",
+                subtitle: "Getting Started Guide",
+                content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
+                created: "2024-10-26T10:00:00.000Z",
+                lastModified: "2024-10-26T10:00:00.000Z",
+                category: "General",
+                tags: ["welcome", "guide"],
+                pinned: true
+            },
+            {
+                id: '20241026-100100-000-0002',
+                title: "Important Features",
+                subtitle: "What's New",
+                content: "1. Colorful note cards\n2. Search functionality\n3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
+                created: "2024-10-26T10:01:00.000Z",
+                lastModified: "2024-10-26T10:01:00.000Z",
+                category: "Features",
+                tags: ["features", "new"],
+                pinned: false
+            }
+        ];
+        saveToLocalStorage();
+    }
     renderNotes();
 });
