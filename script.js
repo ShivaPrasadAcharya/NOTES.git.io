@@ -344,8 +344,12 @@ function renderNotes(searchTerm = '') {
     });
 }
 
-// Initialize the application
+//  initialization 
 document.addEventListener('DOMContentLoaded', function() {
+    // Hide form section on initial load
+    document.getElementById('formSection').style.display = 'none';
+    
+    // Load and render notes
     notes = getMergedNotes();
     renderNotes();
 });
