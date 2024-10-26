@@ -313,3 +313,7 @@ body {
         padding-top: 0;
     }
 }
+/* Add this to your styles.css */
+#formSection {
+    display: none;  /* This will ensure the form is hidden by default */
+}
