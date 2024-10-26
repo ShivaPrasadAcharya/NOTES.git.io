@@ -60,7 +60,7 @@ function getMergedNotes() {
             id: '20241026-100100-000-0002',
             title: "Important Features",
             subtitle: "What's New",
-            content: "1. Colorful note cards\n2. Search functionality\n3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
+            content: "1. Colorful note cards <br>2. Search functionality <br>3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
             created: "2024-10-26T10:01:00.000Z",
             lastModified: "2024-10-26T10:01:00.000Z",
             category: "Features",
