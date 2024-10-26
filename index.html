@@ -41,17 +41,18 @@
                             <input type="hidden" id="editingId">
                             
                             <div class="mb-3">
-                                <label for="noteNumber" class="form-label">Note Number</label>
-                                <input type="text" class="form-control" id="noteNumber" 
-                                       maxlength="4" pattern="\d{4}" required
-                                       placeholder="Enter 4-digit number">
-                                <div class="form-text">
-                                    Enter a unique 4-digit number. Date and time will be automatically added.
-                                </div>
-                                <div class="invalid-feedback">
-                                    Please enter a valid 4-digit number.
-                                </div>
-                            </div>
+    <label for="noteNumber" class="form-label">Note Number</label>
+    <input type="text" class="form-control" id="noteNumber" 
+           maxlength="4" pattern="\d{4}" required
+           placeholder="Enter 4-digit number"
+           inputmode="numeric">
+    <div class="form-text">
+        Enter a unique 4-digit number. Date and time will be automatically added.
+    </div>
+    <div class="invalid-feedback">
+        Please enter a valid 4-digit number.
+    </div>
+</div>
 
                             <div class="mb-3">
                                 <label for="title" class="form-label">Title</label>
