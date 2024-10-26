@@ -4,38 +4,11 @@
     --color3: #E8F3F8;
     --color4: #E8F6E8;
     --color5: #FFF8E7;
-    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-    --transition-speed: 0.3s;
 }
 
-/* Global Styles */
 body {
     background-color: #f8f9fa;
     padding-top: 70px;
-    min-height: 100vh;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #666;
 }
 
 /* Search Bar */
@@ -46,53 +19,23 @@ body {
     right: 0;
     z-index: 1000;
     background: white;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     padding: 15px 0;
-    transition: transform var(--transition-speed);
-}
-
-.search-bar.hide {
-    transform: translateY(-100%);
-}
-
-.search-bar .input-group {
-    box-shadow: var(--shadow-sm);
-    border-radius: 25px;
-    overflow: hidden;
-}
-
-.search-bar .input-group-text {
-    background: transparent;
-    border-right: none;
-    color: #666;
-}
-
-.search-bar input {
-    border-left: none;
-    padding-left: 0;
-}
-
-.search-bar input:focus {
-    box-shadow: none;
-    border-color: #ced4da;
 }
 
 /* Note Cards */
 .note-card {
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-    will-change: transform;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .note-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .note-card .card {
     border: none;
     height: 100%;
-    border-radius: 12px;
-    overflow: hidden;
 }
 
 /* Card Colors */
@@ -117,62 +60,20 @@ body {
 }
 
 /* Card Content */
-.card-body {
-    padding: 1.5rem;
-}
-
 .card-text {
-    color: #2c3e50 !important;
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-.card-title {
-    color: #2c3e50;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    color: black !important;
 }
 
 .card-subtitle {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    text-decoration: underline;
 }
 
-.note-id {
-    font-family: 'Courier New', monospace;
-    font-size: 0.8rem;
-    color: #666;
-    opacity: 0.8;
-    letter-spacing: 0.5px;
-}
-
-/* Form Styles */
-#formSection .card {
-    background: white;
-    border-radius: 15px;
-}
-
-#formSection .form-label {
-    font-weight: 500;
-    color: #2c3e50;
-}
-
-#customId {
-    font-family: 'Courier New', monospace;
-    letter-spacing: 1px;
-    font-size: 1.1rem;
-    text-align: center;
-}
-
-.form-control:focus {
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-
-.form-control.is-invalid:focus {
-    border-color: #dc3545;
-    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+.note-number {
+    font-size: 0.9em;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Action Buttons */
@@ -187,7 +88,7 @@ body {
     background: rgba(255, 255, 255, 0.5);
     border: none;
     margin-right: 8px;
-    transition: all var(--transition-speed);
+    transition: all 0.2s;
 }
 
 .action-btn:hover {
@@ -195,34 +96,17 @@ body {
     transform: scale(1.1);
 }
 
-.action-btn:active {
-    transform: scale(0.95);
+.action-btn:last-child {
+    margin-right: 0;
 }
 
 .action-btn i {
     font-size: 14px;
-    color: #2c3e50;
 }
 
 /* Pinned Note */
 .pinned {
     border: 2px solid #ffd700 !important;
-    position: relative;
-}
-
-.pinned::after {
-    content: '';
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    width: 24px;
-    height: 24px;
-    background: #ffd700;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow-sm);
 }
 
 /* Content Truncation */
@@ -242,7 +126,6 @@ body {
     cursor: pointer;
     font-size: 0.9em;
     opacity: 0.8;
-    transition: opacity var(--transition-speed);
 }
 
 .read-more:hover {
@@ -252,19 +135,10 @@ body {
 /* Data Preview Section */
 .data-preview {
     background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
     position: relative;
-}
-
-.data-preview pre {
-    margin-bottom: 0;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-size: 0.9rem;
-    max-height: 200px;
-    overflow-y: auto;
 }
 
 .copy-btn {
@@ -276,12 +150,15 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
-    transition: all var(--transition-speed);
 }
 
 .copy-btn:hover {
     background: #f0f0f0;
-    transform: scale(1.05);
+}
+
+/* Form Section */
+#formSection {
+    display: none;
 }
 
 /* Add Note Button */
@@ -294,117 +171,26 @@ body {
     height: 60px;
     border-radius: 50%;
     font-size: 24px;
-    background: #007bff;
-    color: white;
+    background: var(--color1);
     border: none;
-    box-shadow: var(--shadow-lg);
-    transition: all var(--transition-speed);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.2s;
 }
 
 .add-note-btn:hover {
-    background: #0056b3;
+    background: var(--color2);
     transform: scale(1.1);
-}
-
-.add-note-btn:active {
-    transform: scale(0.95);
 }
 
 /* Search Highlighting */
 .highlight {
-    background-color: rgba(255, 255, 0, 0.4);
-    border-radius: 2px;
+    background-color: yellow;
+    color: black;
     padding: 0 2px;
-}
-
-/* Timestamps */
-.note-timestamp {
-    font-size: 0.75rem;
-    color: #666;
-    margin-top: 1rem;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    padding-top: 0.5rem;
-}
-
-/* Import/Export Buttons */
-.btn-group {
-    box-shadow: var(--shadow-md);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.btn-group .btn {
-    border: none;
-    padding: 8px 16px;
-}
-
-/* Offline Alert */
-#offlineAlert {
-    z-index: 1001;
-    border-radius: 8px;
-    box-shadow: var(--shadow-lg);
-}
-
-/* Animations */
-@keyframes slideIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.note-card.new {
-    animation: slideIn 0.5s ease-out;
-}
-
-/* Modal Styling */
-.modal-content {
-    border-radius: 15px;
-    border: none;
-    box-shadow: var(--shadow-lg);
-}
-
-.modal-header {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    background-color: #f8f9fa;
-}
-
-.modal-body {
-    padding: 1.5rem;
-}
-
-/* Keyboard Shortcuts */
-kbd {
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.2);
-    padding: 2px 6px;
-    font-size: 0.9em;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    body {
-        padding-top: 60px;
-    }
-
     .col-md-4 {
         margin-bottom: 1rem;
     }
@@ -413,8 +199,8 @@ kbd {
         padding: 1rem;
     }
 
-    .note-id {
-        font-size: 0.75rem;
+    .note-number {
+        font-size: 0.8em;
     }
 
     .action-btn {
@@ -424,65 +210,5 @@ kbd {
 
     .action-btn i {
         font-size: 12px;
-    }
-
-    .add-note-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .btn-group {
-        flex-direction: column;
-    }
-
-    .btn-group .btn {
-        border-radius: 0;
-    }
-
-    .data-preview {
-        font-size: 0.85rem;
-    }
-
-    .modal-dialog {
-        margin: 1rem;
-    }
-}
-
-/* Print Styles */
-@media print {
-    .search-bar,
-    .add-note-btn,
-    .btn-group,
-    .action-btn,
-    #offlineAlert {
-        display: none !important;
-    }
-
-    .note-card {
-        break-inside: avoid;
-    }
-
-    body {
-        padding-top: 0;
-    }
-}
-
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    .search-bar {
-        background: #2c3e50;
-    }
-
-    .search-bar input {
-        background: #34495e;
-        color: white;
-    }
-
-    .search-bar .input-group-text {
-        background: #34495e;
-        color: white;
     }
 }
