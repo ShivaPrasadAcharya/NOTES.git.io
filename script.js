@@ -122,17 +122,20 @@ function hideForm() {
     document.getElementById(id).addEventListener('input', updateDataPreview);
 });
 
+// Replace the form submission part in script.js
 document.getElementById('noteForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const userNumber = document.getElementById('noteNumber').value;
-    const title = document.getElementById('title').value;
-    const subtitle = document.getElementById('subtitle').value;
-    const content = document.getElementById('content').value;
+    // Get input values
+    const userNumber = document.getElementById('noteNumber').value.trim();
+    const title = document.getElementById('title').value.trim();
+    const subtitle = document.getElementById('subtitle').value.trim();
+    const content = document.getElementById('content').value.trim();
     const editingId = document.getElementById('editingId').value;
     
     // Validate user number
     if (!/^\d{4}$/.test(userNumber)) {
+        document.getElementById('noteNumber').classList.add('is-invalid');
         alert('Please enter a valid 4-digit number');
         return;
     }
@@ -141,6 +144,7 @@ document.getElementById('noteForm').addEventListener('submit', function(e) {
     if (!editingId) {
         const idExists = notes.some(note => note.id.endsWith(userNumber.padStart(4, '0')));
         if (idExists) {
+            document.getElementById('noteNumber').classList.add('is-invalid');
             alert('This number is already in use. Please choose a different number.');
             return;
         }
@@ -164,6 +168,26 @@ document.getElementById('noteForm').addEventListener('submit', function(e) {
     
     renderNotes();
     hideForm();
+});
+
+// Add this validation for the note number input
+document.getElementById('noteNumber').addEventListener('input', function(e) {
+    // Remove non-digit characters
+    this.value = this.value.replace(/\D/g, '');
+    
+    // Limit to 4 digits
+    if (this.value.length > 4) {
+        this.value = this.value.slice(0, 4);
+    }
+    
+    // Toggle validation classes
+    if (/^\d{4}$/.test(this.value)) {
+        this.classList.remove('is-invalid');
+        this.classList.add('is-valid');
+    } else {
+        this.classList.remove('is-valid');
+        this.classList.add('is-invalid');
+    }
 });
 
 function togglePin(id) {
