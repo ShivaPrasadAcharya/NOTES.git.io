@@ -93,6 +93,20 @@ function getMergedNotes() {
     "phrases"
   ],
   "pinned": false
+},
+{
+  "id": "20241026-201338-179-0005",
+  "title": "Trade Union",
+  "subtitle": "Collective Bargaining",
+  "content": "<strong>Best Practices of the world </strong>\nHere's a concise overview of each collective bargaining practice:\n\n1. Coordinated Bargaining (Germany)\n- Industry-wide negotiations set wage patterns\n- Strong coordination between unions and employer associations\n- Standardized working conditions across sectors\n\n2. Pattern Bargaining (USA)\n- Lead company/sector sets bargaining template\n- Other companies follow the established pattern\n- Creates wage stability across similar industries\n\n3. Shunto Model (Japan)\n- Annual \"Spring Offensive\" synchronized wage negotiations\n- Coordinated timing across major industries\n- Considers national economic conditions for wage setting\n\n4. Inclusive Negotiation (Sweden)\n- High union-employer cooperation\n- Focus on consensus-building\n- Comprehensive social welfare considerations\n\n5. Social Partnership (Australia)\n- Tripartite collaboration (government, unions, employers)\n- Focus on national economic objectives\n- Balance between worker rights and economic growth\n\n6. Multi-Employer Bargaining\n- Multiple employers negotiate jointly with unions\n- Creates industry-wide standards\n- Reduces competitive wage pressure between companies\n\n<strong> Worst Practices in the World</strong>\nHere's a concise overview of these problematic labor practices:\n\n1. Yellow Unions (Mexico)\n- Company-controlled fake unions\n- Block genuine worker representation\n- Sign agreements without worker consent\n\n2. Political Interference (Russia)\n- State manipulates union activities\n- Forced political alignment of unions\n- Suppression of independent labor voices\n\n3. Violent Strike Tactics (Nigeria)\n- Escalation to physical confrontations\n- Use of intimidation and threats\n- Destructive protest methods harming both sides\n\n4. Non-Regular Workers (South Korea)\n- Massive temporary workforce without benefits\n- Discriminatory dual labor system\n- Exploitation through repeated short-term contracts\n\n5.Union Busting (Various Countries)\n&bull;Aggressive anti-union campaigns\n&bull;Retaliatory firings of organizers\n&bull;Intimidation of pro-union workers\n\n6.Contract Labor System (India)\n&bull;Exploitation through multiple subcontractors\n&bull;Denial of basic benefits\n&bull;Evasion of labor laws through intermediaries\n\n7.Forced Labor (Gulf Countries)\n&bull;Kafala sponsorship system\n&bull;Passport confiscation\n&bull;Limited worker mobility\n\n8.Child Labor (Many Developing Nations)\n&bull;Hazardous working conditions\n&bull;Denial of education\n&bull;Exploitation in informal sectors\n\n9.Gender Discrimination (Global)\n&bull;Unequal pay for equal work\n&bull;Limited promotion opportunities\n&bull;Harassment and unsafe conditions\n\n10.Informal Sector Exploitation (Latin America/Africa)\n&bull;No social security coverage\n&bull;Zero job security\n&bull;Cash payments to avoid regulations\n\n11.Sweatshop Conditions (Southeast Asia)\n&bull;Excessive working hours\n&bull;Unsafe facilities (Poor ventilation & lighting, Overcrowding, Physical exhaustion, High temperatures,)\n&bull;Below minimum wage payments, delayed payment, piece-rate payment, illegal wage deductions in various subjects\n&bull;Exploiting to the last drop\n&bull;Sexual Harrassment, No sick leave, Limited bathroom breaks\n&bull; No employment contracts, child labor utilization\n&bull;Usafe building,  fire safety violations. \n\n12.Zero-Hour Contracts (UK and others)\n&bull;Unpredictable work hours\n&bull;Income insecurity\n&bull;No guaranteed minimum hours",
+  "created": "2024-10-26T14:28:38.179Z",
+  "lastModified": "2024-10-26T14:28:38.179Z",
+  "category": "General",
+  "tags": [
+    "trade",
+    "union"
+  ],
+  "pinned": false
 }
     ];
 
