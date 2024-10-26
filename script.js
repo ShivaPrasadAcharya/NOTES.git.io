@@ -25,7 +25,7 @@ function formatDateTime(dateTimeStr) {
 // Function to save notes to localStorage
 function saveToLocalStorage() {
     try {
-        localStorage.setItem('notes', JSON.stringify(notes));
+        localStorage.setItem('smartNotes', JSON.stringify(notes));
     } catch (error) {
         console.error('Error saving to localStorage:', error);
     }
@@ -34,20 +34,50 @@ function saveToLocalStorage() {
 // Function to load notes from localStorage
 function loadFromLocalStorage() {
     try {
-        const storedNotes = localStorage.getItem('notes');
-        if (storedNotes) {
-            notes = JSON.parse(storedNotes);
-            return true;
-        }
-        return false;
+        const storedNotes = localStorage.getItem('smartNotes');
+        return storedNotes ? JSON.parse(storedNotes) : null;
     } catch (error) {
         console.error('Error loading from localStorage:', error);
-        return false;
+        return null;
     }
 }
 
+// Function to merge default and saved notes
+function getMergedNotes() {
+    const defaultNotes = [
+        {
+            id: '20241026-100000-000-0001',
+            title: "Welcome to Smart Notes!",
+            subtitle: "Getting Started Guide",
+            content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
+            created: "2024-10-26T10:00:00.000Z",
+            lastModified: "2024-10-26T10:00:00.000Z",
+            category: "General",
+            tags: ["welcome", "guide"],
+            pinned: true
+        },
+        {
+            id: '20241026-100100-000-0002',
+            title: "Important Features",
+            subtitle: "What's New",
+            content: "1. Colorful note cards\n2. Search functionality\n3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
+            created: "2024-10-26T10:01:00.000Z",
+            lastModified: "2024-10-26T10:01:00.000Z",
+            category: "Features",
+            tags: ["features", "new"],
+            pinned: false
+        }
+    ];
+
+    const savedNotes = loadFromLocalStorage() || [];
+    const existingIds = new Set(defaultNotes.map(note => note.id));
+    const uniqueSavedNotes = savedNotes.filter(note => !existingIds.has(note.id));
+
+    return [...defaultNotes, ...uniqueSavedNotes];
+}
+
 // Initialize notes array
-let notes = [];
+let notes = getMergedNotes();
 
 // Copy data functionality
 function copyData() {
@@ -91,14 +121,20 @@ function updateDataPreview() {
 }
 
 function showForm(editId = null) {
+    // Prevent editing of default notes
+    if (editId === '20241026-100000-000-0001' || editId === '20241026-100100-000-0002') {
+        alert('Default notes cannot be edited.');
+        return;
+    }
+
     document.getElementById('formSection').style.display = 'block';
     document.getElementById('formTitle').textContent = editId ? 'Edit Note' : 'Add New Note';
     
     if (editId) {
         const note = notes.find(n => n.id === editId);
         document.getElementById('editingId').value = editId;
-        document.getElementById('noteNumber').value = note.id.split('-')[3]; // Get user's number
-        document.getElementById('noteNumber').disabled = true; // Disable changing number during edit
+        document.getElementById('noteNumber').value = note.id.split('-')[3];
+        document.getElementById('noteNumber').disabled = true;
         document.getElementById('title').value = note.title;
         document.getElementById('subtitle').value = note.subtitle;
         document.getElementById('content').value = note.content;
@@ -121,15 +157,12 @@ function hideForm() {
 
 // Note number input validation
 document.getElementById('noteNumber').addEventListener('input', function(e) {
-    // Remove non-digit characters
     this.value = this.value.replace(/\D/g, '');
     
-    // Limit to 4 digits
     if (this.value.length > 4) {
         this.value = this.value.slice(0, 4);
     }
     
-    // Toggle validation classes
     if (/^\d{4}$/.test(this.value)) {
         this.classList.remove('is-invalid');
         this.classList.add('is-valid');
@@ -153,14 +186,12 @@ document.getElementById('noteForm').addEventListener('submit', function(e) {
     const content = document.getElementById('content').value.trim();
     const editingId = document.getElementById('editingId').value;
     
-    // Validate user number
     if (!/^\d{4}$/.test(userNumber)) {
         document.getElementById('noteNumber').classList.add('is-invalid');
         alert('Please enter a valid 4-digit number');
         return;
     }
     
-    // Check if number already exists (for new notes)
     if (!editingId) {
         const idExists = notes.some(note => note.id.endsWith(userNumber.padStart(4, '0')));
         if (idExists) {
@@ -180,14 +211,13 @@ document.getElementById('noteForm').addEventListener('submit', function(e) {
                 content,
                 lastModified: new Date().toISOString()
             };
-            saveToLocalStorage();
         }
     } else {
         const noteData = generateData(userNumber, title, subtitle, content);
         notes.push(noteData);
-        saveToLocalStorage();
     }
     
+    saveToLocalStorage();
     renderNotes();
     hideForm();
 });
@@ -232,6 +262,12 @@ function toggleContent(contentId, noteId) {
 }
 
 function deleteNote(id) {
+    // Prevent deletion of default notes
+    if (id === '20241026-100000-000-0001' || id === '20241026-100100-000-0002') {
+        alert('Default notes cannot be deleted.');
+        return;
+    }
+
     if (confirm('Are you sure you want to delete this note?')) {
         notes = notes.filter(note => note.id !== id);
         saveToLocalStorage();
@@ -249,7 +285,7 @@ function renderNotes(searchTerm = '') {
             note.title.toLowerCase().includes(searchTerm) ||
             note.subtitle.toLowerCase().includes(searchTerm) ||
             note.content.toLowerCase().includes(searchTerm) ||
-            note.id.toLowerCase().includes(searchTerm)  // Added search by ID
+            note.id.toLowerCase().includes(searchTerm)
         );
     }
     
@@ -310,33 +346,6 @@ function renderNotes(searchTerm = '') {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
-    // Load saved notes or set defaults if none exist
-    if (!loadFromLocalStorage()) {
-        notes = [
-            {
-                id: '20241026-100000-000-0001',
-                title: "Welcome to Smart Notes!",
-                subtitle: "Getting Started Guide",
-                content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
-                created: "2024-10-26T10:00:00.000Z",
-                lastModified: "2024-10-26T10:00:00.000Z",
-                category: "General",
-                tags: ["welcome", "guide"],
-                pinned: true
-            },
-            {
-                id: '20241026-100100-000-0002',
-                title: "Important Features",
-                subtitle: "What's New",
-                content: "1. Colorful note cards\n2. Search functionality\n3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
-                created: "2024-10-26T10:01:00.000Z",
-                lastModified: "2024-10-26T10:01:00.000Z",
-                category: "Features",
-                tags: ["features", "new"],
-                pinned: false
-            }
-        ];
-        saveToLocalStorage();
-    }
+    notes = getMergedNotes();
     renderNotes();
 });
