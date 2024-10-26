@@ -23,6 +23,20 @@ body {
     padding: 15px 0;
 }
 
+.search-bar .input-group-text {
+    background: transparent;
+    border-right: none;
+}
+
+.search-bar input {
+    border-left: none;
+}
+
+.search-bar input:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
 /* Note Cards */
 .note-card {
     transition: transform 0.2s, box-shadow 0.2s;
@@ -62,18 +76,28 @@ body {
 /* Card Content */
 .card-text {
     color: black !important;
+    line-height: 1.6;
 }
 
 .card-subtitle {
     text-decoration: underline;
+    color: #666;
 }
 
-.note-number {
-    font-size: 0.9em;
+.note-id {
+    font-size: 0.85em;
     opacity: 0.7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-family: monospace;
+}
+
+/* Form Styles */
+#formSection .card {
+    background: white;
+}
+
+#customId {
+    font-family: monospace;
+    letter-spacing: 1px;
 }
 
 /* Action Buttons */
@@ -107,6 +131,22 @@ body {
 /* Pinned Note */
 .pinned {
     border: 2px solid #ffd700 !important;
+    position: relative;
+}
+
+.pinned::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    background: #ffd700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 /* Content Truncation */
@@ -141,6 +181,12 @@ body {
     position: relative;
 }
 
+.data-preview pre {
+    margin-bottom: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 .copy-btn {
     position: absolute;
     top: 10px;
@@ -150,10 +196,12 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .copy-btn:hover {
     background: #f0f0f0;
+    transform: scale(1.05);
 }
 
 /* Form Section */
@@ -171,26 +219,40 @@ body {
     height: 60px;
     border-radius: 50%;
     font-size: 24px;
-    background: var(--color1);
+    background: #007bff;
+    color: white;
     border: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .add-note-btn:hover {
-    background: var(--color2);
+    background: #0056b3;
     transform: scale(1.1);
 }
 
 /* Search Highlighting */
 .highlight {
-    background-color: yellow;
-    color: black;
+    background-color: rgba(255, 255, 0, 0.4);
+    border-radius: 2px;
     padding: 0 2px;
+}
+
+/* Timestamps */
+.note-timestamp {
+    font-size: 0.8em;
+    color: #666;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
     .col-md-4 {
         margin-bottom: 1rem;
     }
@@ -199,8 +261,8 @@ body {
         padding: 1rem;
     }
 
-    .note-number {
-        font-size: 0.8em;
+    .note-id {
+        font-size: 0.75em;
     }
 
     .action-btn {
@@ -211,4 +273,63 @@ body {
     .action-btn i {
         font-size: 12px;
     }
+
+    .add-note-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .data-preview {
+        font-size: 0.9em;
+    }
+}
+
+/* Animation for new/updated notes */
+@keyframes highlightNew {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.note-card.new {
+    animation: highlightNew 0.5s ease-in-out;
+}
+
+/* Form validation styles */
+.form-control:invalid {
+    border-color: #dc3545;
+    box-shadow: none;
+}
+
+.form-control:valid {
+    border-color: #198754;
+    box-shadow: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
