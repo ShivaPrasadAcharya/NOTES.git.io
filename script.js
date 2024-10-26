@@ -66,7 +66,20 @@ function getMergedNotes() {
             category: "Features",
             tags: ["features", "new"],
             pinned: false
-        }
+        },
+{
+  "id": "20241026-170956-179-0003",
+  "title": "constitution",
+  "subtitle": "judicial review",
+  "content": "judicial review of legislation is brain child of judiciary",
+  "created": "2024-10-26T11:24:56.179Z",
+  "lastModified": "2024-10-26T11:24:56.179Z",
+  "category": "General",
+  "tags": [
+    "constitution"
+  ],
+  "pinned": false
+}
     ];
 
     const savedNotes = loadFromLocalStorage() || [];
