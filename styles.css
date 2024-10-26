@@ -11,6 +11,7 @@ body {
     padding-top: 70px;
 }
 
+/* Search Bar */
 .search-bar {
     position: fixed;
     top: 0;
@@ -22,6 +23,7 @@ body {
     padding: 15px 0;
 }
 
+/* Note Cards */
 .note-card {
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -31,6 +33,12 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
+.note-card .card {
+    border: none;
+    height: 100%;
+}
+
+/* Card Colors */
 .note-card:nth-child(5n+1) .card {
     background-color: var(--color1);
 }
@@ -51,6 +59,7 @@ body {
     background-color: var(--color5);
 }
 
+/* Card Content */
 .card-text {
     color: black !important;
 }
@@ -59,6 +68,15 @@ body {
     text-decoration: underline;
 }
 
+.note-number {
+    font-size: 0.9em;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Action Buttons */
 .action-btn {
     width: 32px;
     height: 32px;
@@ -78,18 +96,25 @@ body {
     transform: scale(1.1);
 }
 
+.action-btn:last-child {
+    margin-right: 0;
+}
+
 .action-btn i {
     font-size: 14px;
 }
 
+/* Pinned Note */
 .pinned {
     border: 2px solid #ffd700 !important;
 }
 
+/* Content Truncation */
 .truncate-content {
     max-height: 100px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .read-more {
@@ -107,6 +132,7 @@ body {
     opacity: 1;
 }
 
+/* Data Preview Section */
 .data-preview {
     background-color: #f8f9fa;
     padding: 1rem;
@@ -130,15 +156,12 @@ body {
     background: #f0f0f0;
 }
 
-.note-number {
-    font-size: 0.9em;
-    opacity: 0.7;
-}
-
+/* Form Section */
 #formSection {
     display: none;
 }
 
+/* Add Note Button */
 .add-note-btn {
     position: fixed;
     bottom: 30px;
@@ -151,6 +174,7 @@ body {
     background: var(--color1);
     border: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.2s;
 }
 
 .add-note-btn:hover {
@@ -158,8 +182,33 @@ body {
     transform: scale(1.1);
 }
 
+/* Search Highlighting */
 .highlight {
     background-color: yellow;
     color: black;
     padding: 0 2px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .col-md-4 {
+        margin-bottom: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .note-number {
+        font-size: 0.8em;
+    }
+
+    .action-btn {
+        width: 28px;
+        height: 28px;
+    }
+
+    .action-btn i {
+        font-size: 12px;
+    }
 }
