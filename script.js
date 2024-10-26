@@ -21,33 +21,7 @@ function generateUniqueId() {
 // Example IDs will look like:
 // 20241026-143022-234-4527  (October 26, 2024, 14:30:22, 234 milliseconds, random number 4527)
 
-// Update the default notes array with new ID format
-let notes = [
-    {
-        id: '20241026-100000-000-0001',  // Example fixed ID for first note
-        noteNumber: "001",
-        title: "Welcome to Smart Notes!",
-        subtitle: "Getting Started Guide",
-        content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
-        created: "2024-10-26T10:00:00.000Z",
-        lastModified: "2024-10-26T10:00:00.000Z",
-        category: "General",
-        tags: ["welcome", "guide"],
-        pinned: true
-    },
-    {
-        id: '20241026-100100-000-0002',  // Example fixed ID for second note
-        noteNumber: "002",
-        title: "Important Features",
-        subtitle: "What's New",
-        content: "1. Colorful note cards\n2. Search functionality\n3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
-        created: "2024-10-26T10:01:00.000Z",
-        lastModified: "2024-10-26T10:01:00.000Z",
-        category: "Features",
-        tags: ["features", "new"],
-        pinned: false
-    }
-];
+
 
 // Function to format date-time for display
 function formatDateTime(dateTimeStr) {
@@ -125,9 +99,10 @@ function renderNotes(searchTerm = '') {
     });
 }
 // Default notes that appear on loading
+// Update the default notes array with new ID format
 let notes = [
     {
-        id: 1,
+        id: '20241026-100000-000-0001',  // Example fixed ID for first note
         noteNumber: "001",
         title: "Welcome to Smart Notes!",
         subtitle: "Getting Started Guide",
@@ -139,7 +114,7 @@ let notes = [
         pinned: true
     },
     {
-        id: 2,
+        id: '20241026-100100-000-0002',  // Example fixed ID for second note
         noteNumber: "002",
         title: "Important Features",
         subtitle: "What's New",
@@ -151,7 +126,6 @@ let notes = [
         pinned: false
     }
 ];
-
 // Copy data functionality
 function copyData() {
     const dataText = document.getElementById('dataPreview').textContent;
