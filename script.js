@@ -1,8 +1,8 @@
-// Function to generate unique ID using date-time stamp
-function generateUniqueId() {
+// Function to generate unique ID using date-time stamp and user number
+function generateUniqueId(userNumber) {
     const now = new Date();
     
-    // Format: YYYYMMDD-HHMMSS-milliseconds-random
+    // Format: YYYYMMDD-HHMMSS-milliseconds-userNumber
     const dateStr = now.getFullYear().toString() +
                    (now.getMonth() + 1).toString().padStart(2, '0') +
                    now.getDate().toString().padStart(2, '0');
@@ -12,9 +12,8 @@ function generateUniqueId() {
                    now.getSeconds().toString().padStart(2, '0');
     
     const millisStr = now.getMilliseconds().toString().padStart(3, '0');
-    const random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
     
-    return `${dateStr}-${timeStr}-${millisStr}-${random}`;
+    return `${dateStr}-${timeStr}-${millisStr}-${userNumber.padStart(4, '0')}`;
 }
 
 // Function to format date-time for display
@@ -27,7 +26,6 @@ function formatDateTime(dateTimeStr) {
 let notes = [
     {
         id: '20241026-100000-000-0001',
-        noteNumber: "001",
         title: "Welcome to Smart Notes!",
         subtitle: "Getting Started Guide",
         content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
@@ -39,7 +37,6 @@ let notes = [
     },
     {
         id: '20241026-100100-000-0002',
-        noteNumber: "002",
         title: "Important Features",
         subtitle: "What's New",
         content: "1. Colorful note cards\n2. Search functionality\n3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
@@ -69,10 +66,9 @@ document.getElementById('searchInput').addEventListener('input', function(e) {
     renderNotes(searchTerm);
 });
 
-function generateData(noteNumber, title, subtitle, content) {
+function generateData(userNumber, title, subtitle, content) {
     return {
-        id: generateUniqueId(),
-        noteNumber: noteNumber || generateUniqueId(),
+        id: generateUniqueId(userNumber),
         title,
         subtitle,
         content,
@@ -85,11 +81,11 @@ function generateData(noteNumber, title, subtitle, content) {
 }
 
 function updateDataPreview() {
-    const noteNumber = document.getElementById('noteNumber').value;
+    const userNumber = document.getElementById('noteNumber').value;
     const title = document.getElementById('title').value;
     const subtitle = document.getElementById('subtitle').value;
     const content = document.getElementById('content').value;
-    const data = generateData(noteNumber, title, subtitle, content);
+    const data = generateData(userNumber, title, subtitle, content);
     document.getElementById('dataPreview').textContent = JSON.stringify(data, null, 2);
 }
 
@@ -100,13 +96,15 @@ function showForm(editId = null) {
     if (editId) {
         const note = notes.find(n => n.id === editId);
         document.getElementById('editingId').value = editId;
-        document.getElementById('noteNumber').value = note.noteNumber;
+        document.getElementById('noteNumber').value = note.id.split('-')[3]; // Get user's number
+        document.getElementById('noteNumber').disabled = true; // Disable changing number during edit
         document.getElementById('title').value = note.title;
         document.getElementById('subtitle').value = note.subtitle;
         document.getElementById('content').value = note.content;
         updateDataPreview();
     } else {
-        document.getElementById('noteNumber').value = generateUniqueId();
+        document.getElementById('noteNumber').disabled = false;
+        document.getElementById('noteNumber').value = '';
     }
     
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -117,6 +115,7 @@ function hideForm() {
     document.getElementById('noteForm').reset();
     document.getElementById('editingId').value = '';
     document.getElementById('dataPreview').textContent = '';
+    document.getElementById('noteNumber').disabled = false;
 }
 
 ['noteNumber', 'title', 'subtitle', 'content'].forEach(id => {
@@ -126,18 +125,32 @@ function hideForm() {
 document.getElementById('noteForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const noteNumber = document.getElementById('noteNumber').value;
+    const userNumber = document.getElementById('noteNumber').value;
     const title = document.getElementById('title').value;
     const subtitle = document.getElementById('subtitle').value;
     const content = document.getElementById('content').value;
     const editingId = document.getElementById('editingId').value;
+    
+    // Validate user number
+    if (!/^\d{4}$/.test(userNumber)) {
+        alert('Please enter a valid 4-digit number');
+        return;
+    }
+    
+    // Check if number already exists (for new notes)
+    if (!editingId) {
+        const idExists = notes.some(note => note.id.endsWith(userNumber.padStart(4, '0')));
+        if (idExists) {
+            alert('This number is already in use. Please choose a different number.');
+            return;
+        }
+    }
     
     if (editingId) {
         const index = notes.findIndex(n => n.id === editingId);
         if (index !== -1) {
             notes[index] = {
                 ...notes[index],
-                noteNumber,
                 title,
                 subtitle,
                 content,
@@ -145,7 +158,7 @@ document.getElementById('noteForm').addEventListener('submit', function(e) {
             };
         }
     } else {
-        const noteData = generateData(noteNumber, title, subtitle, content);
+        const noteData = generateData(userNumber, title, subtitle, content);
         notes.push(noteData);
     }
     
@@ -207,7 +220,8 @@ function renderNotes(searchTerm = '') {
         filteredNotes = notes.filter(note => 
             note.title.toLowerCase().includes(searchTerm) ||
             note.subtitle.toLowerCase().includes(searchTerm) ||
-            note.content.toLowerCase().includes(searchTerm)
+            note.content.toLowerCase().includes(searchTerm) ||
+            note.id.toLowerCase().includes(searchTerm)  // Added search by ID
         );
     }
     
@@ -231,8 +245,7 @@ function renderNotes(searchTerm = '') {
             <div class="card h-100 ${note.pinned ? 'pinned' : ''}">
                 <div class="card-body">
                     <div class="note-number mb-2 text-muted">
-                        <small>Note #${note.noteNumber}</small>
-                        <small class="float-end">ID: ${note.id}</small>
+                        <small>Note #${note.id}</small>
                     </div>
                     <h5 class="card-title">${highlightText(note.title, searchTerm)}</h5>
                     <h6 class="card-subtitle mb-2 text-decoration-underline">${highlightText(note.subtitle, searchTerm)}</h6>
