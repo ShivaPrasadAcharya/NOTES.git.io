@@ -22,7 +22,11 @@ body {
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     padding: 15px 0;
 }
-
+/* Add this to your styles.css */
+.card-text {
+    color: black !important;
+    white-space: pre-line;  /* This will respect \n line breaks */
+}
 .search-bar input {
     border-left: none;
 }
