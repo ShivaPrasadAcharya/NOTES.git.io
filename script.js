@@ -276,7 +276,7 @@ function getMergedNotes() {
 "(2081.07.04)"
 ],
 "pinned": false
-},
+}
       // ... your other default notes ...
   ].map(note => ({ ...note, isDefault: true })); // Add isDefault flag to source code notes
 
