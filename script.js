@@ -174,7 +174,108 @@ function getMergedNotes() {
     "mgmt"
   ],
   "pinned": false
-}
+},
+        {
+  "id": "20241027-143533-100-0011",
+  "title": "Diversity Management",
+  "subtitle": "",
+  "content": "<strong>Diversity Areas </strong>\n* Gender diversity quotas (e.g., Norway: 40% female directors)\n* Skills and expertise diversity\n* Cultural and ethnic diversity\n* Age diversity and term limits",
+  "created": "2024-10-27T08:50:33.100Z",
+  "lastModified": "2024-10-27T08:50:33.100Z",
+  "category": "General",
+  "tags": [
+    "diversity",
+    "management"
+  ],
+  "pinned": false
+},
+        {
+  "id": "20241027-143454-276-0012",
+  "title": "Emerging Trends",
+  "subtitle": "",
+  "content": "* Technology Governance",
+  "created": "2024-10-27T08:49:54.276Z",
+  "lastModified": "2024-10-27T08:49:54.276Z",
+  "category": "General",
+  "tags": [
+    "emerging",
+    "trends"
+  ],
+  "pinned": false
+},
+        {
+  "id": "20241027-143403-148-0013",
+  "title": "Acronyms",
+  "subtitle": "",
+  "content": "E= Evaluation (evaluation of current state )/establishing\nA=Analysis (Gap Analysis)/Adaptation/ Assessment/Alignment/\nS=Setting (Priority Setting, Goal Setting, target setting, standards, shared goals)/streamlining\nY=Yearly Planning (Yearly Action Plan)",
+  "created": "2024-10-27T08:49:03.148Z",
+  "lastModified": "2024-10-27T08:49:03.148Z",
+  "category": "General",
+  "tags": [
+    "acronyms"
+  ],
+  "pinned": false
+},
+{
+  "id": "20241027-143312-140-0014",
+  "title": "A-Z",
+  "subtitle": "",
+  "content": "<strong>Positive Terms</strong>\nA = Able, Accomplished, Adaptable, Adventurous, Ambitious, Authentic, Awesome\nB = Balanced, Blessed, Bold, Brave, Brilliant, Buoyant\nC = Capable, Caring, Charismatic, Confident, Creative, Curious\nD = Dedicated, Determined, Diligent, Dynamic, Dazzling\nE = Eager, Efficient, Eloquent, Empathetic, Energetic, Enthusiastic, Excellent\nF = Fabulous, Faithful, Fearless, Flexible, Focused, Friendly, Fulfilling\nG = Genuine, Gifted, Grateful, Graceful, Growing, Grounded\nH = Happy, Harmonious, Healthy, Helpful, Honest, Hopeful\nI = Imaginative, Inspiring, Intelligent, Intuitive, Innovative\nJ = Joyful, Jubilant, Just, Jovial\nK = Kind, Keen, Knowledgeable\nL = Loving, Loyal, Lively, Learned, Logical, Luminous\nM = Magnificent, Mature, Mindful, Motivated, Mighty\nN = Natural, Noble, Nourishing, Nurturing\nO = Observant, Optimistic, Organized, Original, Outstanding\nP = Patient, Peaceful, Persistent, Positive, Powerful, Progressive\nQ = Quick-witted, Quiet-confident, Quality-focused\nR = Radiant, Rational, Reliable, Resilient, Resourceful\nS = Sincere, Skillful, Smart, Spirited, Strong, Successful\nT = Talented, Thoughtful, Thriving, Trustworthy, Truthful\nU = Unafraid, Understanding, Unique, Unstoppable, Uplifting\nV = Valuable, Versatile, Vibrant, Victorious, Virtuous\nW = Warm, Wise, Wonderful, Worthy\nX = Xanthous (bright, radiant), Xenodochial (friendly to strangers)\nY = Youthful, Yielding (in a positive way - flexible)\nZ = Zealous, Zestful, Zen\n\n<strong>Negative Terms </strong>\nA = Abandoned, Absent-minded, Anxious, Apologetic, Average, Awkward\nB = Bewildered, Blundering, Boring, Broken, Bumbling, Burdensome\nC = Careless, Chaotic, Clumsy, Confused, Cowardly, Cringeworthy\nD = Defective, Deficient, Dependent, Desperate, Disappointing, Disorganized, Dull\nE = Embarrassing, Empty, Erratic, Error-prone, Exhausted\nF = Failed, Falsified, Faulty, Fearful, Flawed, Foolish, Forgetful, Fraudulent, Fabricated\nG = Gawky, Gloomy, Graceless, Guilty\nH = Hapless, Helpless, Hesitant, Hopeless\nI = Ignorant, Immature, Imperfect, Inadequate, Incompetent, Insecure\nJ = Jaded, Jangled, Jarring, Jittery, Jumpy\nK = Klutzy, Knotted\nL = Lacking, Lazy, Limited, Lost, Lousy, Lukewarm\nM = Maladroit, Mediocre, Meek, Messy, Mistaken, Muddled\nN = Naive, Needy, Negative, Nervous, Neurotic\nO = Obsolete, Odd, Ordinary, Overwhelmed, Overworked\nP = Pathetic, Perplexed, Powerless, Procrastinating, Puzzled\nQ = Quaking, Queasy, Questioning, Quiet, Quitting\nR = Regretful, Reluctant, Restless, Rigid, Rusty\nS = Scattered, Shaky, Slow, Stumbling, Subpar\nT = Tense, Timid, Tired, Troubled, Twisted\nU = Unapproachable, Uncertain, Uncomfortable, Unreliable, Unworthy\nV = Vacant, Vague, Vulnerable\nW = Weak, Weary, Worthless, Wavering, Withdrawn\nX = Xenial (overly concerned with others), Xerotic (lifeless)\nY = Yielding, Youthlessly naive\nZ = Zealless, Zigzagging, Zonked",
+  "created": "2024-10-27T08:48:12.140Z",
+  "lastModified": "2024-10-27T08:48:12.140Z",
+  "category": "General",
+  "tags": [
+    "a-z"
+  ],
+  "pinned": false
+},
+{
+  "id": "20241027-143241-204-0015",
+  "title": "Better phrases",
+  "subtitle": "",
+  "content": "द्रव्यदृष्टि\nexample→notable example\npoor→pro-poor\ncooperation →seamless cooperation\nउत्तम →सर्वोत्तम\nउत्कृष्ट→सर्वोत्कृष्ट",
+  "created": "2024-10-27T08:47:41.204Z",
+  "lastModified": "2024-10-27T08:47:41.204Z",
+  "category": "General",
+  "tags": [
+    "better",
+    "phrases"
+  ],
+  "pinned": false
+},
+{
+  "id": "20241027-143122-883-0016",
+  "title": "Security management",
+  "subtitle": "Examples",
+  "content": "<h3>Notable Examples of National Security Management Systems</h3>\n\n<strong><underline> 1. Israel's Multi-Layered Defense Approach</underline></strong>\n<strong>Key Features</strong>\n- Integrated civilian-military coordination\n- Advanced early warning systems\n- Multi-agency threat assessment\n- Strong cyber defense capabilities\n- Public-private partnerships in security technology\n\n<strong>Notable Elements</strong>\n- Home Front Command for civilian protection\n- Advanced missile defense systems (Iron Dome)\n- Sophisticated intelligence gathering networks\n- Mandatory military service contributing to security awareness\n\n<strong><underline> 2. Singapore's Total Defence Strategy</underline></strong>\n<strong>Key Features</strong>\n- Comprehensive five-pillar approach:\n  - Military Defence\n  - Civil Defence\n  - Economic Defence\n  - Social Defence\n  - Psychological Defence\n- Recently added Digital Defence as sixth pillar\n\n<strong>Notable Elements</strong>\n- National Service program\n- Inter-agency coordination\n- Strong focus on cybersecurity\n- Emphasis on social cohesion\n- Regular national security exercises\n\n<strong><underline> 3. Switzerland's Armed Neutrality Model</underline></strong>\n<strong>Key Features</strong>\n- Maintained neutrality while ensuring strong defense\n- Universal conscription system\n- Decentralized emergency response\n- Protected infrastructure network\n- Advanced civil defense systems\n\n<strong>Notable Elements</strong>\n- Nationwide nuclear bunker system\n- Militia-based army structure\n- Mountain fortress strategy\n- Strong emphasis on self-reliance\n- Robust emergency preparedness\n\n<strong><underline> 4. Estonia's Digital Security Framework</underline></strong>\n<strong>Key Features</strong>\n- Advanced e-governance infrastructure\n- NATO Cooperative Cyber Defence Centre of Excellence\n- Distributed digital systems\n- Blockchain-based security measures\n- Strong focus on cyber resilience\n\n<strong>Notable Elements</strong>\n- Digital ID system\n- Data embassy concept\n- Public-private cyber cooperation\n- Regular cyber defense exercises\n- Digital continuity of government\n\n<strong><underline> 5. Japan's Comprehensive Security Approach</underline></strong>\n<strong>Key Features</strong>\n- Integration of economic and military security\n- Focus on disaster preparedness\n- Advanced technological capabilities\n- Regional security cooperation\n- Maritime security emphasis\n\n<strong>Notable Elements</strong>\n- Japan Coast Guard operations\n- Natural disaster response system\n- Critical infrastructure protection\n- Advanced surveillance capabilities\n- International security partnerships\n\n<strong><underline> Key Lessons and Best Practices</underline></strong>\n\n<strong>1. Integration and Coordination</strong>\n- Seamless cooperation between agencies\n- Clear command and control structures\n- Regular joint exercises\n- Shared intelligence platforms\n- Unified response protocols\n\n<strong>2. Technology Integration</strong>\n- Advanced warning systems\n- Cyber defense capabilities\n- AI and machine learning applications\n- Secure communication networks\n- Automated threat detection\n\n<strong>3. Public Engagement</strong>\n- Regular citizen drills\n- Public awareness campaigns\n- Community involvement in security\n- Transparent communication\n- Educational initiatives\n\n<strong>4. Resource Management</strong>\n- Strategic resource allocation\n- Emergency stockpiles\n- Flexible response capabilities\n- Sustainable funding models\n- Efficient logistics systems\n\n<strong>5. International Cooperation</strong>\n- Intelligence sharing agreements\n- Joint training exercises\n- Technology exchanges\n- Diplomatic initiatives\n- Regional security frameworks\n\n<strong><underline> Emerging Trends</underline></strong>\n- Increased focus on cyber threats\n- Climate security considerations\n- Hybrid warfare preparedness\n- AI-driven threat analysis\n- Pandemic response integration",
+  "created": "2024-10-27T08:46:22.883Z",
+  "lastModified": "2024-10-27T08:46:22.883Z",
+  "category": "General",
+  "tags": [
+    "security",
+    "management"
+  ],
+  "pinned": false
+},
+{
+  "id": "20241027-142931-531-0017",
+  "title": "Kamal Sir's Tip for Joint Secretary (2081.07.04)",
+  "subtitle": "",
+  "content": "<strong>Books/Notes Refered </strong>\n1. महेश्वर भट्टराईको नोट\n2. रणनीति योजना न्यायपालिका , यसैबाट SWOT analysis गर्ने\n3. १६ औं योजना\n4.AMB को interview (न्याय जर्नल)\n5. Bimal श्रीमान र Bhadrakali श्रीमानको DCM पढ्ने\n6.संविधानवाद-  Tek Dhungana\n7. आचार संहिता- UN Banglore etc\n8. रामबन्धुको नोट\n9. Note style- buwan Pandey\n10. सरकारी वकील दिग्दर्शन पढ्ने\n11. उदयराना मगरको किताब\n12. नरहरी घिमिरेको Innovative State नोट\n13. कुन किताबमा कुन article राम्रो छ त्यो पढ्ने\n14. उमेश मैनाली -व्यरो व्यथा\n15. कर्मचारीतन्त्रको विनिर्माण  लेख पढ्नुहोस।\n\n<strong>Language Used</strong>\n1.50 वटा Bunch of Words बनाउने\n2. Less Paper ले पुगेन Paperless नै हुनपर्यो\n3. Automation ले मात्र पुग्दैन, Autonation नै हुनुपर्यो\n4. Ready made answer बनाउने\n5. AI question आउन सक्छ, यसलाई National Security सँग जोड्ने\n6.Time पाएको भए राम्रै लेख्थ्यो भन्ने पार्ने\n7. रामबन्धुको भाषा प्रयोग गर्ने\n8. प्रश्न खण्डिकरण गरेर हेर्नेः स्थानीय, प्रदेश र संघले के गर्नुपर्छ/ प्रबन्धगत, नीतिगत, कार्यगत, संविधानगत\n9. सुधारका क्षेत्र- Parliament, parliamentary committee, Bar, People, Civil society, प्रहरी, prosecutor, judiciary, media, political parties, etc.\n10. just, fair & reasonable\n11. making, breaking and remaking of law,\n12. सुखद प्रत्याभुति जनतालाई दिनुपर्छ\n13.अलि अलि कापी भरिने, अलि अलि jargon\n14. Policy level of Question solution- policy cycle का प्रत्येकको 5-7 points बनाउने (Formulation, Implementation, Monitoring, Feedback), \n15. संविधान/policy/ AI/ योजना/SDGs\n16. Deconstruction of Bureaucracy को कुरा पनि गर्ने गरिन्छ तर यसको उत्तम विकल्प कसैले सुझाउन सकेको छैन।  यसलाई सुधार गर्नु नै यसको एकमात्र विकल्प हो।\n17. Organizational Vitality थप्ने काम गर्छ\n18. Silo Mentality, Dilly Dally, Adhoc छौ, Change resist गर्छौं, Manena Culture, whimsical culture\n17. Umesh mainali को word प्रयोग गर्ने\n18. Dubai को जस्तो 10x technique , Singapore जस्तो Regualtory Sandbox Model भित्र्याउनुपर्यो/ अपनाउनुपर्यो\n19. fund, function and functionaries\n20. हाम्रो लागि Ist & IInd paper challenging हुन्छ\n21.मनपरेको शब्दलाई Innovative तरिकाले प्रयोग गर्ने\n22. Climate Change issue लाई राम्रो तयारी गर्नुहोला , LAPA, NAPA लेख्ने\n23. निजामति सुधारका ७ वटा क्षेत्र छन्  भनी भनेर किटेर भन्ने\n24.O&M\n25.content & Contest\n26. START -UP fund-policy answer बनाइराख्ने\n19. जे पढिन्छ त्यसलाई undermine गर्ने- Automation ले पुग्दैन e-Estonia जस्तो Autonation मा जानुपर्छ\n20.पुरा भाषा नलेख्ने/ broken point मा लेख्ने\n21. English हो कि Nepali मा लेखेको थाहा नहोस्- दुवैमा लेख्ने\n22... भरपुर उपयोग गर्न सकिएन\n23.  ... soil friendly भएन\n24. SWOT analysis गरेर policy बनाइएन\n25. ritualistic भयो\n26. Eco power shifted to AI power\n27. Emotional बनाउने गरी लेख्ने- मानव अस्तित्व नै संकटमा पारेको अनुभूति भएको छ\n28. Categorise writing- अनि प्रत्येकमा २-३ वटा मात्र sub-point लेख्ने\n29. Ready Made Answer बनाउने\n30. कार्ययोजना बनाएर Bhuwan Pandey को कुरा लेख्ने\n31. Question नछुटाउने तर छोटो लेख्ने\n32. mindset मा पनि advance हुन सकेन\n33. Directive Principle मा राष्ट्रपतिको भूमिका पनि लेख्ने\n34. रचनात्मक सिर्जनात्मक हुने\n35. Constructive सुझावलाई कार्यान्वयन गर्नुपर्छ\n36. e- innovativeness चाहियो\n37. Time पुगेन भने माथि background नपढ्ने, WH question मात्र पढ्ने\n38. नेतागत, नीतिगत र नेतागत भ्रष्ट्राचार\n39. Utilitarianism principle अनुसारका नीतिहरू बन्न सकेनन\n40. Deontological Ethics\n41. thin firm of difference छ\n42. hard hitting गर्नुपर्छ, निर्मम प्रहार आवश्यक छ\n43. Organized हुने , एक पाने note बनाउने\n44. Leadership को समस्या\n45. थोरै idea ले पनि धेरै hit गर्ने\n46.नेपालमा अर्थतन्त्रका चुनौतिहरू-15 point ready made बनाउने\n47.institutional memory\n48.",
+  "created": "2024-10-27T08:44:31.531Z",
+  "lastModified": "2024-10-27T08:44:31.531Z",
+  "category": "General",
+  "tags": [
+    "kamal",
+    "sir's",
+    "tip",
+    "for",
+    "joint",
+    "secretary",
+    "(2081.07.04)"
+  ],
+  "pinned": false
+},
     ];
 
     const savedNotes = loadFromLocalStorage() || [];
