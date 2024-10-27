@@ -81,12 +81,12 @@ function getMergedNotes() {
   "pinned": false
 },
 {
-  "id": "20241026-185204-108-0004",
+  "id": "20241027-073719-646-0004",
   "title": "professional phrases",
   "subtitle": "सहसचिव",
-  "content": "प्रशासन सुधार गन्तव्य नभै क्षितिज तर्फको यात्रा   हो <br>परिपाटी र कार्यशैलीमा हेरफेर गर्न गरिने प्रयासलाई नै सामान्य रुपमा प्रशासन सुधार भन्ने गरिन्छ<br> निम्न मूलभूत कारणहरुले प्रशासन सुधारको आवश्यकता महशुस हुन्छः<br>प्रशासनिक मूल्य मान्यतामा आएका आयामिक परिवर्तनहरु<br>प्रशासनिक परिपाटि",
-  "created": "2024-10-26T13:07:04.108Z",
-  "lastModified": "2024-10-26T13:07:04.108Z",
+  "content": "* प्रशासन सुधार गन्तव्य नभै क्षितिज तर्फको यात्रा   हो \n* परिपाटी र कार्यशैलीमा हेरफेर गर्न गरिने प्रयासलाई नै सामान्य रुपमा प्रशासन सुधार भन्ने गरिन्छ\n* निम्न मूलभूत कारणहरुले प्रशासन सुधारको आवश्यकता महशुस हुन्छः\n* प्रशासनिक मूल्य मान्यतामा आएका आयामिक परिवर्तनहरु\n* प्रशासनिक परिपाटि",
+  "created": "2024-10-27T01:52:19.646Z",
+  "lastModified": "2024-10-27T01:52:19.646Z",
   "category": "General",
   "tags": [
     "professional",
@@ -105,6 +105,73 @@ function getMergedNotes() {
   "tags": [
     "trade",
     "union"
+  ],
+  "pinned": false
+},
+        {
+  "id": "20241027-074031-022-0006",
+  "title": "Programming",
+  "subtitle": "CRUDE",
+  "content": "C=Create\nR=Read\nU=Update\nD=Delete\nE=Edit",
+  "created": "2024-10-27T01:55:31.022Z",
+  "lastModified": "2024-10-27T01:55:31.022Z",
+  "category": "General",
+  "tags": [
+    "programming"
+  ],
+  "pinned": false
+},
+        {
+  "id": "20241027-074154-391-0007",
+  "title": "Inclusive Representation",
+  "subtitle": "",
+  "content": "<strong>Two Errors </strong>\n1. Inclusive Error (पाउनुपर्नेले पाएन)\n2. Exclusive Error  (नपाउनुपर्नेले पायो)",
+  "created": "2024-10-27T01:56:54.391Z",
+  "lastModified": "2024-10-27T01:56:54.391Z",
+  "category": "General",
+  "tags": [
+    "inclusive",
+    "representation"
+  ],
+  "pinned": false
+},
+        {
+  "id": "20241027-074115-966-0008",
+  "title": "constitution",
+  "subtitle": "Parliamentary Hearing",
+  "content": "* न्यायाधीशको संसदीय सुनुवाईको अर्थ छैन। सुनुवाई नै गर्ने हो भने न्यायपरिषदको संरचनाभित्र गरिनु उचित हुन्छ।",
+  "created": "2024-10-27T01:56:15.966Z",
+  "lastModified": "2024-10-27T01:56:15.966Z",
+  "category": "General",
+  "tags": [
+    "constitution"
+  ],
+  "pinned": false
+},
+        {
+  "id": "20241027-073926-646-0009",
+  "title": "constitution",
+  "subtitle": "FR & DPSP",
+  "content": "*FR हरू Deepening हुन्छ तर DPSP हरू widening हुन्छ।\n*FR हरू राज्यको वर्तमान हैसियत र क्षमताको आधारमा तय गरिन्छ भने DPSP भविष्यपरक हुन्छन्।",
+  "created": "2024-10-27T01:54:26.646Z",
+  "lastModified": "2024-10-27T01:54:26.646Z",
+  "category": "General",
+  "tags": [
+    "constitution"
+  ],
+  "pinned": false
+},
+        {
+  "id": "20241027-073836-343-0010",
+  "title": "Change Mgmt",
+  "subtitle": "",
+  "content": "* Revolution of Rising Expection and Revolution of Rising Frustration हरू परिवर्तनका सम्बाहक हुन्।",
+  "created": "2024-10-27T01:53:36.343Z",
+  "lastModified": "2024-10-27T01:53:36.343Z",
+  "category": "General",
+  "tags": [
+    "change",
+    "mgmt"
   ],
   "pinned": false
 }
