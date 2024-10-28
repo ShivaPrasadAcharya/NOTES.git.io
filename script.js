@@ -46,12 +46,12 @@ function loadFromLocalStorage() {
 function getMergedNotes() {
   const defaultNotes = [
   {
-  "id": "20241028-100957-684-0020",
+  "id": "20241028-102646-132-0020",
   "title": "Rajendra sir,",
   "subtitle": "",
-  "content": "expert होइन moralist चाहियो/ हुनुपर्यो (Wonkery or moralist)\nRRR-Rule, Routine and Red Tape\nनिजामति सेवामा celebrity बन्ने होइन\nनिजमति सेवामा बढने होइन अडने हो\n\nplum posting & punishment posting\ncombining the hair one by one, cooking rice grain by grain-Laotse\nDarling of people हुनपर्यो\nComprehensive Democracy \nOvert Politicization-मनपरको सचिवलाई मन्त्रालयमा मनत्रीले तान्ने\nwhen people are lame they try to blame\nल्याकत, लगन, लोकप्रियता, लोकाचार- निजामति सेवा\nचिहानको गणतनत्रमा मात्र सबै समान हुन्छन्\nकार विग्रियो भनेर बयलगाडाम हिड्न सकिन्न, कार नै मर्मत गर्नुपर्छ\nमरिचमानले २०४४ सालमा सुकेका पकहरू (dead wood) सफा गर्ने नाममा १४४ जना कर्मचारीलाई अवकाटा दिएका छन्\nअध्यारोलाई सराप्नुभन्दा महिन बाल्नु राम्रो हो\nघर घरको खबर पल पलमा लिने क्षमता राख्नुपर्छ स्थानीय सरकारले\nDeep State-TV serial",
-  "created": "2024-10-28T04:24:57.684Z",
-  "lastModified": "2024-10-28T04:24:57.684Z",
+  "content": "&bull;expert होइन moralist चाहियो/ हुनुपर्यो (Wonkery or moralist)\n&bull;RRR-Rule, Routine and Red Tape\n&bull;निजामति सेवामा celebrity बन्ने होइन\n&bull;निजमति सेवामा बढ्ने होइन अड्ने हो\n&bull;plum posting & punishment posting\n&bull;combining the hair one by one, cooking rice grain by grain-Laotse\n&bull;Darling of people हुनपर्यो\n&bull;Comprehensive Democracy \n&bull;Overt Politicization-मनपरको सचिवलाई मन्त्रालयमा मनत्रीले तान्ने\n&bull;when people are lame they try to blame\n&bull;ल्याकत, लगन, लोकप्रियता, लोकाचार- निजामति सेवा\n&bull;चिहानको गणतनत्रमा मात्र सबै समान हुन्छन्\n&bull;कार विग्रियो भनेर बयलगाडाम हिड्न सकिन्न, कार नै मर्मत गर्नुपर्छ\n&bull;मरिचमानले २०४४ सालमा सुकेका पकहरू (dead wood) सफा गर्ने नाममा १४४ जना कर्मचारीलाई अवकाटा दिएका छन्\n&bull;अध्यारोलाई सराप्नुभन्दा महिन बाल्नु राम्रो हो\n&bull;घर घरको खबर पल पलमा लिने क्षमता राख्नुपर्छ स्थानीय सरकारले\n&bull;Deep State-TV serial",
+  "created": "2024-10-28T04:41:46.132Z",
+  "lastModified": "2024-10-28T04:41:46.132Z",
   "category": "General",
   "tags": [
     "rajendra",
@@ -59,7 +59,7 @@ function getMergedNotes() {
   ],
   "pinned": false,
   "isDefault": false
-}, 
+},
 {
       id: '20241026-100000-000-0001',
       title: "Welcome to Smart Notes!",
