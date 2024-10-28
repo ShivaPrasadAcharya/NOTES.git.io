@@ -45,7 +45,22 @@ function loadFromLocalStorage() {
 // Function to merge default and saved notes
 function getMergedNotes() {
   const defaultNotes = [
-    {
+  {
+  "id": "20241028-100957-684-0020",
+  "title": "Rajendra sir,",
+  "subtitle": "",
+  "content": "expert होइन moralist चाहियो/ हुनुपर्यो (Wonkery or moralist)\nRRR-Rule, Routine and Red Tape\nनिजामति सेवामा celebrity बन्ने होइन\nनिजमति सेवामा बढने होइन अडने हो\n\nplum posting & punishment posting\ncombining the hair one by one, cooking rice grain by grain-Laotse\nDarling of people हुनपर्यो\nComprehensive Democracy \nOvert Politicization-मनपरको सचिवलाई मन्त्रालयमा मनत्रीले तान्ने\nwhen people are lame they try to blame\nल्याकत, लगन, लोकप्रियता, लोकाचार- निजामति सेवा\nचिहानको गणतनत्रमा मात्र सबै समान हुन्छन्\nकार विग्रियो भनेर बयलगाडाम हिड्न सकिन्न, कार नै मर्मत गर्नुपर्छ\nमरिचमानले २०४४ सालमा सुकेका पकहरू (dead wood) सफा गर्ने नाममा १४४ जना कर्मचारीलाई अवकाटा दिएका छन्\nअध्यारोलाई सराप्नुभन्दा महिन बाल्नु राम्रो हो\nघर घरको खबर पल पलमा लिने क्षमता राख्नुपर्छ स्थानीय सरकारले\nDeep State-TV serial",
+  "created": "2024-10-28T04:24:57.684Z",
+  "lastModified": "2024-10-28T04:24:57.684Z",
+  "category": "General",
+  "tags": [
+    "rajendra",
+    "sir,"
+  ],
+  "pinned": false,
+  "isDefault": false
+}, 
+{
       id: '20241026-100000-000-0001',
       title: "Welcome to Smart Notes!",
       subtitle: "Getting Started Guide",
