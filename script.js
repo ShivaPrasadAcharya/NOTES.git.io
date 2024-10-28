@@ -45,8 +45,40 @@ function loadFromLocalStorage() {
 // Function to merge default and saved notes
 function getMergedNotes() {
   const defaultNotes = [
+    {
+  "id": "20241028-193339-551-0020",
+  "title": "Prof. phrases III",
+  "subtitle": "सहसचिव",
+  "content": "• Brilliant bureaucracy\n\n• Community-centric changes\n- Constructive criticisms\n- Cultivating collaborative connections\n\n• Digital developments\n- Dynamic dialogue between diligent denizens and dedicated decision-makers\n\n• E-governance enables effortless engagement\n- Ecosystem of citizen engagement\n\n• Feedback forums foster fruitful, frank fraternization\n-Forward Thinking Frameworks\n\n• Incremental improvements\n- Insightful innovation\n\n• Online platforms offer opportunities\n-Offering Opportunities for optimal outcomes\n\n• Refined regulations\n- Reshaping realities\n- Responsive representatives\n\n• Satisfactory solutions\n\n•Tangible Transformation\n\n• Virtual venues vitalize vibrant voices, validate varied viewpoints\n-Vigilant Voters' Voice\n\n• Willing workers\n- Workforce transformation",
+  "created": "2024-10-28T13:48:39.551Z",
+  "lastModified": "2024-10-28T13:48:39.551Z",
+  "category": "General",
+  "tags": [
+    "prof.",
+    "phrases",
+    "iii"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
+    {
+  "id": "20241028-193253-686-0019",
+  "title": "Prof. Phrases-Part II",
+  "subtitle": "सहसचिव",
+  "content": "*वैश्विक सहयोग\n*दीर्घकालिनदृष्टि\n*नूतनविचार\n*पुरातनपद्धति परित्याग\n*वैश्विक प्रतिस्पर्धा\n*सम्यक् संकल्प आवश्यक छ\n*राजनैतिक इच्छाशक्ति, प्रशासनिक दक्षता र नागरिक सहभागिता\n*विश्ववाणिज्य विकास\n*घातकघटना\n*गमन आगमन गतिरोध\n*चिरचिन्तन चेतना\n*नूतननीति निर्धारणम्\n*निजिक्षेत्र नीति\n*परिणामपरक प्रबन्धन परिकल्पना\n*सुशासन सिद्धान्त सर्वत्र समाहित गरिनुपर्छ\n*सहभागिता, समानता, समाजिक न्यायको संरक्षण, सुपरादर्शित सुशासनका सारभूत अंगहरू हुन्\n*संघीयशासनव्यस्थामा सुशासनका सिद्धान्तको सफल समन्वय गरिनुपर्छ\n*वैश्विक शान्ति (global peace)\n*नवनिर्माण\n*जन जागरूकता\n*नागरिक नेतृत्व\n*कागजी कारवाही\n*शासन श्रृंखला\n*पदानुक्रम प्रणाली\n*प्रशासनिक प्रोटोकल\n*नियम निर्देशन\n*कार्यकारी कर्तव्य\n*अधिकार अभिन्यास\n*प्रशासनिक परीक्षण\n*नीति निर्माण र नीति निष्पादन (policy implementation)\n*दलीय दाम्पत्य\n*कार्यकुशलता\n*सेवासुधार\n*कर्म कौशलम्\n*कार्यसम्पादन सम्परीक्षण (performance evaluation)\n*सेवासंस्कृति\n*प्रणालिपरिवर्तन (Change Mgmt)\n*परिवर्तनपर्वतन\n*नूतननिर्माता\n*शोधशक्ति (power of research)\n*प्रजापोषित प्रजातन्त्र\n*नागरिकनिर्मित नीति नियम\n*अधिकारात्मक अभिव्यक्ति\n*जोखिम-जागरूक जाँच\n*विविधवर्गविकास\n*कुशल कर्मचारी चयनले कार्यक्षेत्रको कल्याण हुन्छ\n*निष्पक्ष निर्णय\n*मङ्गलमयी मार्ग\n*विजयध्वज\n*विकासध्वज\n*अनुशरण गर्नुपर्नेमा अनुकरण गरीयो । soil friendly हुन सकेन\n\n*प्रशासन सुधार गन्तव्य नभै क्षितिज तर्फको यात्रा  हो \n*परिपाटी र कार्यशैलीमा हेरफेर गर्न गरिने प्रयासलाई नै सामान्य रुपमा प्रशासन सुधार भन्ने गरिन्छ\n*निम्न मूलभूत कारणहरुले प्रशासन सुधारको आवश्यकता महशुस हुन्छः\n*प्रशासनिक मूल्य मान्यतामा आएका आयामिक परिवर्तनहरु\n*प्रशासनिक परिपाटि\n*कानून लागु गर्न, नीति कार्यान्वयन  गर्न र सरकारले वाचा गरेका सेवाहरू वितरण गर्न बनेको संयन्त्र नै bureaucracy हो\n*द्वन्द्व र दबाबबीच निकास निकाल्नुपर्छ",
+  "created": "2024-10-28T13:47:53.686Z",
+  "lastModified": "2024-10-28T13:47:53.686Z",
+  "category": "General",
+  "tags": [
+    "prof.",
+    "phrases-part",
+    "ii"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
   {
-  "id": "20241028-102646-132-0020",
+  "id": "20241028-102646-132-0018",
   "title": "Rajendra sir,",
   "subtitle": "",
   "content": "&bull;expert होइन moralist चाहियो/ हुनुपर्यो (Wonkery or moralist)\n&bull;RRR-Rule, Routine and Red Tape\n&bull;निजामति सेवामा celebrity बन्ने होइन\n&bull;निजमति सेवामा बढ्ने होइन अड्ने हो\n&bull;plum posting & punishment posting\n&bull;combining the hair one by one, cooking rice grain by grain-Laotse\n&bull;Darling of people हुनपर्यो\n&bull;Comprehensive Democracy \n&bull;Overt Politicization-मनपरको सचिवलाई मन्त्रालयमा मनत्रीले तान्ने\n&bull;when people are lame they try to blame\n&bull;ल्याकत, लगन, लोकप्रियता, लोकाचार- निजामति सेवा\n&bull;चिहानको गणतनत्रमा मात्र सबै समान हुन्छन्\n&bull;कार विग्रियो भनेर बयलगाडाम हिड्न सकिन्न, कार नै मर्मत गर्नुपर्छ\n&bull;मरिचमानले २०४४ सालमा सुकेका पकहरू (dead wood) सफा गर्ने नाममा १४४ जना कर्मचारीलाई अवकाटा दिएका छन्\n&bull;अध्यारोलाई सराप्नुभन्दा महिन बाल्नु राम्रो हो\n&bull;घर घरको खबर पल पलमा लिने क्षमता राख्नुपर्छ स्थानीय सरकारले\n&bull;Deep State-TV serial",
@@ -61,18 +93,22 @@ function getMergedNotes() {
   "isDefault": false
 },
 {
-      id: '20241026-100000-000-0001',
-      title: "Welcome to Smart Notes!",
-      subtitle: "Getting Started Guide",
-      content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
-      created: "2024-10-26T10:00:00.000Z",
-      lastModified: "2024-10-26T10:00:00.000Z",
-      category: "General",
-      tags: ["welcome", "guide"],
-      pinned: true
-  },
+  "id": "20241028-193217-070-0017",
+  "title": "Answering Techniques",
+  "subtitle": "सहसचिव",
+  "content": "<strong>NEPAL's PROBLEM </strong>\n• <strong>Geographical Challenges </strong>\n<u>Case Study: Citizenship Certificate Acquisition</u>\n++Current Process in Remote Areas:\n-Multiple trips to District Headquarters\n-Required Documents:\n\n*Migration certificate from original VDC/Municipality\n*Birth registration\n*Land ownership documents\n*Parent's citizenship\n*Ward recommendation\n\n<b>Real Impact:</b>\n-Average time: 3-6 months\n-Citizens from Humla, Dolpa, Mugu districts travel 2-3 days to reach district offices\n-Cost burden: NPR 5000-15000 for travel and accommodation\n-Many remain without citizenship due to bureaucratic hurdles\n\n• <strong>Post-Federalism Administrative Complexity </strong>\n<u>Example: Business Registration Process</u>\nThree-Tier Registration Requirements:\n\n1. Local Level (Palika)\n-Initial registration\n-Local tax clearance\n-Ward recommendation\n\n2. Provincial Level\n-Provincial registration\n-Industry department approval\n\n3. Federal Level\n-PAN/VAT registration\n-Company registration\n\n<b>• LAND ADMINISTRATION ISSUES</b>\n<u>Case Study: Land Transaction Process</u> \n<b>Steps Required:</b>\n\n-Ward Office verification\n-Land Revenue Office check\n-Survey Department mapping\n-Municipality clearance\n-Land Registration Office\n\n<b>Real Data:</b>\n\n-Average completion time: 3-4 months\n-Required documents: 22 different types\n-Visits needed: 8-12 times\n-45% cases involve \"speed money\"\n-Cost escalation: 15-20% of actual fees\n\n<b>• HEALTH SERVICE DELIVERY</b>\n<u>Example: Government Hospital Service at Bir Hospital</u>\n\n<b>Process Flow:</b>\n- Registration counter (1-2 hours)\n- Initial assessment (2-3 hours)\n- Doctor consultation (2-4 hours)\n- Laboratory tests (separate day)\n- Medicine collection (1-2 hours)\n\n<b>Challenges:</b>\n- Average waiting time: 6-8 hours\n- Multiple visits required for single treatment\n- 52% patients report paying unofficial agents\n- Rural patients spend 2-3 days for single consultation\n\n<b>• LOCAL GOVERNMENT SERVICE DELIVERY</b>\n<u>Example: Building Permit Process in Pokhara Metropolitan</u>\n\n<b>Requirements:</b>\n- Land ownership verification\n- Neighborhood approval\n- Technical assessment\n- Environmental clearance\n- Road department NOC\n\n<b>Timeline & Data:</b>\n- Official time: 35 days\n- Actual time: 90-120 days\n- Required documents: 18 types\n- Visits needed: 15-20 times\n\n<b>• SUCCESSFUL REFORM INITIATIVES</b>\n\n<u>NAGARIK APP</u>\n<b>Implementation Results:</b>\n- 50+ government services\n- 1.2 million users\n- 30% reduction in physical visits\n- Available in 77 districts\n\n<u>DIGITAL NEPAL FRAMEWORK</u>\n<b>Achievements:</b>\n- Online passport applications\n- E-immigration services\n- Digital payment systems\n- Reduced processing time by 40%\n\n<u>LOCAL DIGITAL PROFILE SYSTEM</u>\n<b>Impact:</b>\n- Integrated data management\n- Reduced documentation requirements\n- Faster service delivery\n- 25% improvement in efficiency\n\n<b>• KEY REFORM RECOMMENDATIONS</b>\n\n<u>Administrative Reforms</u>\n- Reduce approval layers\n- Implement one-window service\n- Standardize procedures\n- Time-bound service delivery\n\n<u>Technology Integration</u>\n- Expand digital services\n- Implement integrated data systems\n- Mobile-based applications\n- Internet connectivity improvement\n\n<u>Capacity Building</u>\n- Staff training programs\n- Performance management\n- Merit-based promotions\n- Regular skill updates\n\n<u>Legal Framework</u>\n- Right to Service Act\n- Anti-corruption measures\n- Service standards\n- Accountability mechanisms\n\n<u>Infrastructure Development</u>\n- Digital infrastructure\n- Physical facility improvement\n- Resource allocation\n- Maintenance systems\n\n<b>• IMPLEMENTATION CHALLENGES</b>\n\n<u>Geographic Barriers</u>\n- Difficult terrain\n- Limited connectivity\n- Resource distribution\n- Access issues\n\n<u>Resource Constraints</u>\n- Limited budget\n- Technical expertise shortage\n- Infrastructure gaps\n- Training needs\n\n<u>Political Factors</u>\n- Federal transition\n- Policy inconsistency\n- Political interference\n- Coordination issues\n\n<u>Social Issues</u>\n- Digital literacy\n- Language barriers\n- Cultural resistance\n- Gender discrimination\n\n<b>• MONITORING MECHANISMS</b>\n\n<u>Performance Metrics</u>\n- Service delivery time\n- User satisfaction\n- Complaint resolution\n- Cost efficiency\n\n<u>Accountability Systems</u>\n- Public hearings\n- Social audits\n- Citizen feedback\n- Regular reporting",
+  "created": "2024-10-28T13:47:17.070Z",
+  "lastModified": "2024-10-28T13:47:17.070Z",
+  "category": "General",
+  "tags": [
+    "answering",
+    "techniques"
+  ],
+  "pinned": false,
+  "isDefault": false
+}
   {
-      id: '20241026-100100-000-0002',
+      id: '20241026-100100-000-0016',
       title: "Important Features",
       subtitle: "What's New",
       content: "1. Colorful note cards <br>2. Search functionality <br>3. Copy data feature\n4. Pin important notes\n5. Edit and delete options",
@@ -83,7 +119,7 @@ function getMergedNotes() {
       pinned: false
   },
 {
-"id": "20241026-170956-179-0003",
+"id": "20241026-170956-179-0015",
 "title": "constitution",
 "subtitle": "judicial review",
 "content": "judicial review of legislation is brain child of judiciary",
@@ -96,12 +132,12 @@ function getMergedNotes() {
 "pinned": false
 },
 {
-  "id": "20241028-184504-245-0004",
+  "id": "20241028-192548-557-0014",
   "title": "professional phrases",
   "subtitle": "सहसचिव",
-  "content": "प्रशासन सुधार गन्तव्य नभै क्षितिज तर्फको यात्रा   हो <br>परिपाटी र कार्यशैलीमा हेरफेर गर्न गरिने प्रयासलाई नै सामान्य रुपमा प्रशासन सुधार भन्ने गरिन्छ<br> निम्न मूलभूत कारणहरुले प्रशासन सुधारको आवश्यकता महशुस हुन्छः<br>प्रशासनिक मूल्य मान्यतामा आएका आयामिक परिवर्तनहरु<br>प्रशासनिक परिपाटि\n*Bureaucratic Pathology- काम गर्नु छैन, पढेर बस्ने\n*कानून लागु गर्न, नीति कार्यान्वयन  गर्न र सरकारले वाचा गरेका सेवाहरू वितरण गर्न बनेको संयन्त्र नै bureaucracy हो\n*द्वन्द्व र दबाबबीच निकास निकाल्नुपर्छ\n*\n<strong>Emotional Phrases </strong>\n*Logical End मा पुर्‍याउन सकिएको छैन/ पुगेको अवस्था छैन\n*life लाई Easy बनाउनुपर्नेमा हामीले life लाई busy बनाइरहेका छौं\n*Gender Justice-Gender मा बढी focus भइयो Justice मा कम focus भइयो\n* Cultural Corruption-राज्यलाई गोत्र मतलब भएन उमेर मतलब भयो (विवाहमा)/ एउटै गोत्रमा विवाह गराइदिने\n*पहिचानको पीडामा संयीयता\n*Initiatives/Model/ Approach/ Principle/System\n*Regulatory Compliance\n*Red Tapism\n*Bureaucratic Inertia\n*Silo Mentality\n*Organizational Rigidity\n*Goal Displacement-when goal is not attained then goal is changed. (But we have to change the strategy)\n*Bureaucratic Drift-the gradual drift of bureaucratic agencies away from their original mandates/intention of policymakers\n*Bureaucratic Alienation-the feeling of powerlessness & estrangement experienced by employee due to repetitive & meaningless task.\n*Micromanagement\n*Resource Misallocation\n*Duplication of Effort\n*Policy Crisis\n*Accountability Gap\n*Regulatory Capture\n*Rent Seeking Tendency\n*Abuse of Discretionary Power\n*Dilly Dallying\n*Manena Culture-भोलिवाद\n*Multi-Headed Hydra\n*Less paper to paperless\n*Empire Building\n*Circular Reporting-पुनः निर्णय गर्नु, टिप्पणि उठाउनु\n*Authority Dilution- too much delegation leading to unclear accountability & efficiency\n*Internal Politics\n*Information bottleneck-obstruction in the flow of information\n*Task Overload\n*Counterproductive behaviour\n*Box Ticking- process oriented and excessively formal\n*Bureaucratic Backlog-unresolved issues\n*Feather Bedding-Hiring more employees than necessary (eg: प्रदेशले अदालतै पिच्छे pvt. कानून व्यवसायी नियुक्ति गर्नू)\n*Analysis Paralysis-Over analysis of issue\n*Kafkaesque Procedures- Process & procedures that are excessively complex, illogical or absurd\n*Jobbery= Job+Robbery\n*Status Quo\n*Decision Drift\n*Erosion of Trust\n*Turf wars-Conflict between different departments/agencies over control of resources/areas of responsibility\n*Vicious Cycle\n*Symbolic Compliance to Rules-compliance to regualation & directives supreficially\n*Organization Blot-Excessive growth of an org. interms of staffs & departments leading to inefficiency & waste (विशेष गरी प्रदेसमा देखिएको छ)/ गठन आदेशबाट विकास समिति\n\n<strong>NEPAL's PROBLEM </strong>\n• <strong>Geographical Challenges </strong>\n<u>Case Study: Citizenship Certificate Acquisition</u>\n++Current Process in Remote Areas:\n-Multiple trips to District Headquarters\n-Required Documents:\n\n*Migration certificate from original VDC/Municipality\n*Birth registration\n*Land ownership documents\n*Parent's citizenship\n*Ward recommendation\n\n<b>Real Impact:</b>\n-Average time: 3-6 months\n-Citizens from Humla, Dolpa, Mugu districts travel 2-3 days to reach district offices\n-Cost burden: NPR 5000-15000 for travel and accommodation\n-Many remain without citizenship due to bureaucratic hurdles\n\n• <strong>Post-Federalism Administrative Complexity </strong>\n<u>Example: Business Registration Process</u>\nThree-Tier Registration Requirements:\n\n1. Local Level (Palika)\n-Initial registration\n-Local tax clearance\n-Ward recommendation\n\n2. Provincial Level\n-Provincial registration\n-Industry department approval\n\n3. Federal Level\n-PAN/VAT registration\n-Company registration\n\n<b>• LAND ADMINISTRATION ISSUES</b>\n<u>Case Study: Land Transaction Process</u> \n<b>Steps Required:</b>\n\n-Ward Office verification\n-Land Revenue Office check\n-Survey Department mapping\n-Municipality clearance\n-Land Registration Office\n\n<b>Real Data:</b>\n\n-Average completion time: 3-4 months\n-Required documents: 22 different types\n-Visits needed: 8-12 times\n-45% cases involve \"speed money\"\n-Cost escalation: 15-20% of actual fees\n\n<b>• HEALTH SERVICE DELIVERY</b>\n<u>Example: Government Hospital Service at Bir Hospital</u>\n\n<b>Process Flow:</b>\n- Registration counter (1-2 hours)\n- Initial assessment (2-3 hours)\n- Doctor consultation (2-4 hours)\n- Laboratory tests (separate day)\n- Medicine collection (1-2 hours)\n\n<b>Challenges:</b>\n- Average waiting time: 6-8 hours\n- Multiple visits required for single treatment\n- 52% patients report paying unofficial agents\n- Rural patients spend 2-3 days for single consultation\n\n<b>• LOCAL GOVERNMENT SERVICE DELIVERY</b>\n<u>Example: Building Permit Process in Pokhara Metropolitan</u>\n\n<b>Requirements:</b>\n- Land ownership verification\n- Neighborhood approval\n- Technical assessment\n- Environmental clearance\n- Road department NOC\n\n<b>Timeline & Data:</b>\n- Official time: 35 days\n- Actual time: 90-120 days\n- Required documents: 18 types\n- Visits needed: 15-20 times\n\n<b>• SUCCESSFUL REFORM INITIATIVES</b>\n\n<u>NAGARIK APP</u>\n<b>Implementation Results:</b>\n- 50+ government services\n- 1.2 million users\n- 30% reduction in physical visits\n- Available in 77 districts\n\n<u>DIGITAL NEPAL FRAMEWORK</u>\n<b>Achievements:</b>\n- Online passport applications\n- E-immigration services\n- Digital payment systems\n- Reduced processing time by 40%\n\n<u>LOCAL DIGITAL PROFILE SYSTEM</u>\n<b>Impact:</b>\n- Integrated data management\n- Reduced documentation requirements\n- Faster service delivery\n- 25% improvement in efficiency\n\n<b>• KEY REFORM RECOMMENDATIONS</b>\n\n<u>Administrative Reforms</u>\n- Reduce approval layers\n- Implement one-window service\n- Standardize procedures\n- Time-bound service delivery\n\n<u>Technology Integration</u>\n- Expand digital services\n- Implement integrated data systems\n- Mobile-based applications\n- Internet connectivity improvement\n\n<u>Capacity Building</u>\n- Staff training programs\n- Performance management\n- Merit-based promotions\n- Regular skill updates\n\n<u>Legal Framework</u>\n- Right to Service Act\n- Anti-corruption measures\n- Service standards\n- Accountability mechanisms\n\n<u>Infrastructure Development</u>\n- Digital infrastructure\n- Physical facility improvement\n- Resource allocation\n- Maintenance systems\n\n<b>• IMPLEMENTATION CHALLENGES</b>\n\n<u>Geographic Barriers</u>\n- Difficult terrain\n- Limited connectivity\n- Resource distribution\n- Access issues\n\n<u>Resource Constraints</u>\n- Limited budget\n- Technical expertise shortage\n- Infrastructure gaps\n- Training needs\n\n<u>Political Factors</u>\n- Federal transition\n- Policy inconsistency\n- Political interference\n- Coordination issues\n\n<u>Social Issues</u>\n- Digital literacy\n- Language barriers\n- Cultural resistance\n- Gender discrimination\n\n<b>• MONITORING MECHANISMS</b>\n\n<u>Performance Metrics</u>\n- Service delivery time\n- User satisfaction\n- Complaint resolution\n- Cost efficiency\n\n<u>Accountability Systems</u>\n- Public hearings\n- Social audits\n- Citizen feedback\n- Regular reporting",
-  "created": "2024-10-28T13:00:04.245Z",
-  "lastModified": "2024-10-28T13:00:04.245Z",
+  "content": "<strong>Emotional Phrases </strong>\n*Bureaucratic Pathology- काम गर्नु छैन, पढेर बस्ने\n*Logical End मा पुर्‍याउन सकिएको छैन/ पुगेको अवस्था छैन\n*life लाई Easy बनाउनुपर्नेमा हामीले life लाई busy बनाइरहेका छौं\n*Gender Justice-Gender मा बढी focus भइयो Justice मा कम focus भइयो\n* Cultural Corruption-राज्यलाई गोत्र मतलब भएन उमेर मतलब भयो (विवाहमा)/ एउटै गोत्रमा विवाह गराइदिने\n*पहिचानको पीडामा संयीयता\n*Initiatives/Model/ Approach/ Principle/System\n*Regulatory Compliance\n*Red Tapism\n*Bureaucratic Inertia\n*Silo Mentality\n*Organizational Rigidity\n*Goal Displacement-when goal is not attained then goal is changed. (But we have to change the strategy)\n*Bureaucratic Drift-the gradual drift of bureaucratic agencies away from their original mandates/intention of policymakers\n*Bureaucratic Alienation-the feeling of powerlessness & estrangement experienced by employee due to repetitive & meaningless task.\n*Micromanagement\n*Resource Misallocation\n*Duplication of Effort\n*Policy Crisis\n*Accountability Gap\n*Regulatory Capture\n*Rent Seeking Tendency\n*Abuse of Discretionary Power\n*Dilly Dallying\n*Manena Culture-भोलिवाद\n*Multi-Headed Hydra\n*Less paper to paperless\n*Empire Building\n*Circular Reporting-पुनः निर्णय गर्नु, टिप्पणि उठाउनु\n*Authority Dilution- too much delegation leading to unclear accountability & efficiency\n*Internal Politics\n*Information bottleneck-obstruction in the flow of information\n*Task Overload\n*Counterproductive behaviour\n*Box Ticking- process oriented and excessively formal\n*Bureaucratic Backlog-unresolved issues\n*Feather Bedding-Hiring more employees than necessary (eg: प्रदेशले अदालतै पिच्छे pvt. कानून व्यवसायी नियुक्ति गर्नू)\n*Analysis Paralysis-Over analysis of issue\n*Kafkaesque Procedures- Process & procedures that are excessively complex, illogical or absurd\n*Jobbery= Job+Robbery\n*Status Quo\n*Decision Drift\n*Erosion of Trust\n*Turf wars-Conflict between different departments/agencies over control of resources/areas of responsibility\n*Vicious Cycle\n*Symbolic Compliance to Rules-compliance to regualation & directives supreficially\n*Organization Blot-Excessive growth of an org. interms of staffs & departments leading to inefficiency & waste (विशेष गरी प्रदेसमा देखिएको छ)/ गठन आदेशबाट विकास समिति",
+  "created": "2024-10-28T13:40:48.557Z",
+  "lastModified": "2024-10-28T13:40:48.557Z",
   "category": "General",
   "tags": [
     "professional",
@@ -110,22 +146,8 @@ function getMergedNotes() {
   "pinned": false,
   "isDefault": false
 },
-{
-"id": "20241026-203030-773-0005",
-"title": "Trade Union",
-"subtitle": "Collective Bargaining",
-"content": "<strong>Best Practices of the world </strong>\nHere's a concise overview of each collective bargaining practice:\n\n1. Coordinated Bargaining (Germany)\n- Industry-wide negotiations set wage patterns\n- Strong coordination between unions and employer associations\n- Standardized working conditions across sectors\n\n2. Pattern Bargaining (USA)\n- Lead company/sector sets bargaining template\n- Other companies follow the established pattern\n- Creates wage stability across similar industries\n\n3. Shunto Model (Japan)\n- Annual \"Spring Offensive\" synchronized wage negotiations\n- Coordinated timing across major industries\n- Considers national economic conditions for wage setting\n\n4. Inclusive Negotiation (Sweden)\n- High union-employer cooperation\n- Focus on consensus-building\n- Comprehensive social welfare considerations\n\n5. Social Partnership (Australia)\n- Tripartite collaboration (government, unions, employers)\n- Focus on national economic objectives\n- Balance between worker rights and economic growth\n\n6. Multi-Employer Bargaining\n- Multiple employers negotiate jointly with unions\n- Creates industry-wide standards\n- Reduces competitive wage pressure between companies\n\n<strong> Worst Practices in the World</strong>\nHere's a concise overview of these problematic labor practices:\n\n1. Yellow Unions (Mexico)\n- Company-controlled fake unions\n- Block genuine worker representation\n- Sign agreements without worker consent\n\n2. Political Interference (Russia)\n- State manipulates union activities\n- Forced political alignment of unions\n- Suppression of independent labor voices\n\n3. Violent Strike Tactics (Nigeria)\n- Escalation to physical confrontations\n- Use of intimidation and threats\n- Destructive protest methods harming both sides\n\n4. Non-Regular Workers (South Korea)\n- Massive temporary workforce without benefits\n- Discriminatory dual labor system\n- Exploitation through repeated short-term contracts\n\n5.Union Busting (Various Countries)\n&bull;Aggressive anti-union campaigns\n&bull;Retaliatory firings of organizers\n&bull;Intimidation of pro-union workers\n\n6.Contract Labor System (India)\n&bull;Exploitation through multiple subcontractors\n&bull;Denial of basic benefits\n&bull;Evasion of labor laws through intermediaries\n\n7.Forced Labor (Gulf Countries)\n&bull;Kafala sponsorship system\n&bull;Passport confiscation\n&bull;Limited worker mobility\n\n8.Child Labor (Many Developing Nations)\n&bull;Hazardous working conditions\n&bull;Denial of education\n&bull;Exploitation in informal sectors\n\n9.Gender Discrimination (Global)\n&bull;Unequal pay for equal work\n&bull;Limited promotion opportunities\n&bull;Harassment and unsafe conditions\n\n10.Informal Sector Exploitation (Latin America/Africa)\n&bull;No social security coverage\n&bull;Zero job security\n&bull;Cash payments to avoid regulations\n\n11.Sweatshop Conditions (Southeast Asia)\n&bull;Excessive working hours\n&bull;Unsafe facilities (Poor ventilation & lighting, Overcrowding, Physical exhaustion, High temperatures,)\n&bull;Below minimum wage payments, delayed payment, piece-rate payment, illegal wage deductions in various subjects\n&bull;Exploiting to the last drop\n&bull;Sexual Harrassment, No sick leave, Limited bathroom breaks\n&bull; No employment contracts, child labor utilization\n&bull;Usafe building,  fire safety violations. \n\n12.Zero-Hour Contracts (UK and others)\n&bull;Unpredictable work hours\n&bull;Income insecurity\n&bull;No guaranteed minimum hours\n\n<strong>Impacts</strong>\n-Perpetual poverty cycle\n-Physical health deterioration\n-Mental health issues\n-Family separation\n-Work-related injuries/deaths\n\n<strong>Why They Persist: </strong>\n-Global demand for cheap products\n-Weak labor law enforcement\n-Corruption in monitoring systems\n-Complex supply chains hiding violations\n-Economic desperation of workers",
-"created": "2024-10-26T14:45:30.773Z",
-"lastModified": "2024-10-26T14:45:30.773Z",
-"category": "General",
-"tags": [
-"trade",
-"union"
-],
-"pinned": false
-},
   {
-"id": "20241027-074031-022-0006",
+"id": "20241027-074031-022-0013",
 "title": "Programming",
 "subtitle": "CRUDE",
 "content": "C=Create\nR=Read\nU=Update\nD=Delete\nE=Edit",
@@ -138,7 +160,7 @@ function getMergedNotes() {
 "pinned": false
 },
   {
-"id": "20241027-074154-391-0007",
+"id": "20241027-074154-391-0012",
 "title": "Inclusive Representation",
 "subtitle": "",
 "content": "<strong>Two Errors </strong>\n1. Inclusive Error (पाउनुपर्नेले पाएन)\n2. Exclusive Error  (नपाउनुपर्नेले पायो)",
@@ -152,7 +174,7 @@ function getMergedNotes() {
 "pinned": false
 },
   {
-"id": "20241027-074115-966-0008",
+"id": "20241027-074115-966-0011",
 "title": "constitution",
 "subtitle": "Parliamentary Hearing",
 "content": "* न्यायाधीशको संसदीय सुनुवाईको अर्थ छैन। सुनुवाई नै गर्ने हो भने न्यायपरिषदको संरचनाभित्र गरिनु उचित हुन्छ।",
@@ -165,7 +187,7 @@ function getMergedNotes() {
 "pinned": false
 },
   {
-"id": "20241027-073926-646-0009",
+"id": "20241027-073926-646-0010",
 "title": "constitution",
 "subtitle": "FR & DPSP",
 "content": "*FR हरू Deepening हुन्छ तर DPSP हरू widening हुन्छ।\n*FR हरू राज्यको वर्तमान हैसियत र क्षमताको आधारमा तय गरिन्छ भने DPSP भविष्यपरक हुन्छन्।",
@@ -178,7 +200,7 @@ function getMergedNotes() {
 "pinned": false
 },
   {
-"id": "20241027-073836-343-0010",
+"id": "20241027-073836-343-0009",
 "title": "Change Mgmt",
 "subtitle": "",
 "content": "* Revolution of Rising Expection and Revolution of Rising Frustration हरू परिवर्तनका सम्बाहक हुन्।",
@@ -192,7 +214,7 @@ function getMergedNotes() {
 "pinned": false
 },
   {
-"id": "20241027-143533-100-0011",
+"id": "20241027-143533-100-0008",
 "title": "Diversity Management",
 "subtitle": "",
 "content": "<strong>Diversity Areas </strong>\n* Gender diversity quotas (e.g., Norway: 40% female directors)\n* Skills and expertise diversity\n* Cultural and ethnic diversity\n* Age diversity and term limits",
@@ -206,7 +228,7 @@ function getMergedNotes() {
 "pinned": false
 },
   {
-"id": "20241027-143454-276-0012",
+"id": "20241027-143454-276-0007",
 "title": "Emerging Trends",
 "subtitle": "",
 "content": "* Technology Governance",
@@ -220,7 +242,7 @@ function getMergedNotes() {
 "pinned": false
 },
   {
-"id": "20241027-143403-148-0013",
+"id": "20241027-143403-148-0006",
 "title": "Acronyms",
 "subtitle": "",
 "content": "E= Evaluation (evaluation of current state )/establishing\nA=Analysis (Gap Analysis)/Adaptation/ Assessment/Alignment/\nS=Setting (Priority Setting, Goal Setting, target setting, standards, shared goals)/streamlining\nY=Yearly Planning (Yearly Action Plan)",
@@ -233,7 +255,7 @@ function getMergedNotes() {
 "pinned": false
 },
 {
-"id": "20241027-143312-140-0014",
+"id": "20241027-143312-140-0005",
 "title": "A-Z",
 "subtitle": "",
 "content": "<strong>Positive Terms</strong>\nA = Able, Accomplished, Adaptable, Adventurous, Ambitious, Authentic, Awesome\nB = Balanced, Blessed, Bold, Brave, Brilliant, Buoyant\nC = Capable, Caring, Charismatic, Confident, Creative, Curious\nD = Dedicated, Determined, Diligent, Dynamic, Dazzling\nE = Eager, Efficient, Eloquent, Empathetic, Energetic, Enthusiastic, Excellent\nF = Fabulous, Faithful, Fearless, Flexible, Focused, Friendly, Fulfilling\nG = Genuine, Gifted, Grateful, Graceful, Growing, Grounded\nH = Happy, Harmonious, Healthy, Helpful, Honest, Hopeful\nI = Imaginative, Inspiring, Intelligent, Intuitive, Innovative\nJ = Joyful, Jubilant, Just, Jovial\nK = Kind, Keen, Knowledgeable\nL = Loving, Loyal, Lively, Learned, Logical, Luminous\nM = Magnificent, Mature, Mindful, Motivated, Mighty\nN = Natural, Noble, Nourishing, Nurturing\nO = Observant, Optimistic, Organized, Original, Outstanding\nP = Patient, Peaceful, Persistent, Positive, Powerful, Progressive\nQ = Quick-witted, Quiet-confident, Quality-focused\nR = Radiant, Rational, Reliable, Resilient, Resourceful\nS = Sincere, Skillful, Smart, Spirited, Strong, Successful\nT = Talented, Thoughtful, Thriving, Trustworthy, Truthful\nU = Unafraid, Understanding, Unique, Unstoppable, Uplifting\nV = Valuable, Versatile, Vibrant, Victorious, Virtuous\nW = Warm, Wise, Wonderful, Worthy\nX = Xanthous (bright, radiant), Xenodochial (friendly to strangers)\nY = Youthful, Yielding (in a positive way - flexible)\nZ = Zealous, Zestful, Zen\n\n<strong>Negative Terms </strong>\nA = Abandoned, Absent-minded, Anxious, Apologetic, Average, Awkward\nB = Bewildered, Blundering, Boring, Broken, Bumbling, Burdensome\nC = Careless, Chaotic, Clumsy, Confused, Cowardly, Cringeworthy\nD = Defective, Deficient, Dependent, Desperate, Disappointing, Disorganized, Dull\nE = Embarrassing, Empty, Erratic, Error-prone, Exhausted\nF = Failed, Falsified, Faulty, Fearful, Flawed, Foolish, Forgetful, Fraudulent, Fabricated\nG = Gawky, Gloomy, Graceless, Guilty\nH = Hapless, Helpless, Hesitant, Hopeless\nI = Ignorant, Immature, Imperfect, Inadequate, Incompetent, Insecure\nJ = Jaded, Jangled, Jarring, Jittery, Jumpy\nK = Klutzy, Knotted\nL = Lacking, Lazy, Limited, Lost, Lousy, Lukewarm\nM = Maladroit, Mediocre, Meek, Messy, Mistaken, Muddled\nN = Naive, Needy, Negative, Nervous, Neurotic\nO = Obsolete, Odd, Ordinary, Overwhelmed, Overworked\nP = Pathetic, Perplexed, Powerless, Procrastinating, Puzzled\nQ = Quaking, Queasy, Questioning, Quiet, Quitting\nR = Regretful, Reluctant, Restless, Rigid, Rusty\nS = Scattered, Shaky, Slow, Stumbling, Subpar\nT = Tense, Timid, Tired, Troubled, Twisted\nU = Unapproachable, Uncertain, Uncomfortable, Unreliable, Unworthy\nV = Vacant, Vague, Vulnerable\nW = Weak, Weary, Worthless, Wavering, Withdrawn\nX = Xenial (overly concerned with others), Xerotic (lifeless)\nY = Yielding, Youthlessly naive\nZ = Zealless, Zigzagging, Zonked",
@@ -246,7 +268,7 @@ function getMergedNotes() {
 "pinned": false
 },
 {
-"id": "20241027-143241-204-0015",
+"id": "20241027-143241-204-0004",
 "title": "Better phrases",
 "subtitle": "",
 "content": "द्रव्यदृष्टि\nexample→notable example\npoor→pro-poor\ncooperation →seamless cooperation\nउत्तम →सर्वोत्तम\nउत्कृष्ट→सर्वोत्कृष्ट",
@@ -260,7 +282,7 @@ function getMergedNotes() {
 "pinned": false
 },
 {
-  "id": "20241028-105006-129-0016",
+  "id": "20241028-105006-129-0003",
   "title": "Security management",
   "subtitle": "Examples",
   "content": "Notable Examples of National Security Management Systems\n\n<strong><underline> 1. Israel's Multi-Layered Defense Approach</underline></strong>\n<strong>Key Features</strong>\n- Integrated civilian-military coordination\n- Advanced early warning systems\n- Multi-agency threat assessment\n- Strong cyber defense capabilities\n- Public-private partnerships in security technology\n\n<strong>Notable Elements</strong>\n- Home Front Command for civilian protection\n- Advanced missile defense systems (Iron Dome)\n- Sophisticated intelligence gathering networks\n- Mandatory military service contributing to security awareness\n\n<strong><underline> 2. Singapore's Total Defence Strategy</underline></strong>\n<strong>Key Features</strong>\n- Comprehensive five-pillar approach:\n  - Military Defence\n  - Civil Defence\n  - Economic Defence\n  - Social Defence\n  - Psychological Defence\n- Recently added Digital Defence as sixth pillar\n\n<strong>Notable Elements</strong>\n- National Service program\n- Inter-agency coordination\n- Strong focus on cybersecurity\n- Emphasis on social cohesion\n- Regular national security exercises\n\n<strong><underline> 3. Switzerland's Armed Neutrality Model</underline></strong>\n<strong>Key Features</strong>\n- Maintained neutrality while ensuring strong defense\n- Universal conscription system\n- Decentralized emergency response\n- Protected infrastructure network\n- Advanced civil defense systems\n\n<strong>Notable Elements</strong>\n- Nationwide nuclear bunker system\n- Militia-based army structure\n- Mountain fortress strategy\n- Strong emphasis on self-reliance\n- Robust emergency preparedness\n\n<strong><underline> 4. Estonia's Digital Security Framework</underline></strong>\n<strong>Key Features</strong>\n- Advanced e-governance infrastructure\n- NATO Cooperative Cyber Defence Centre of Excellence\n- Distributed digital systems\n- Blockchain-based security measures\n- Strong focus on cyber resilience\n\n<strong>Notable Elements</strong>\n- Digital ID system\n- Data embassy concept\n- Public-private cyber cooperation\n- Regular cyber defense exercises\n- Digital continuity of government\n\n<strong><underline> 5. Japan's Comprehensive Security Approach</underline></strong>\n<strong>Key Features</strong>\n- Integration of economic and military security\n- Focus on disaster preparedness\n- Advanced technological capabilities\n- Regional security cooperation\n- Maritime security emphasis\n\n<strong>Notable Elements</strong>\n- Japan Coast Guard operations\n- Natural disaster response system\n- Critical infrastructure protection\n- Advanced surveillance capabilities\n- International security partnerships\n\n<strong><underline> Key Lessons and Best Practices</underline></strong>\n\n<strong>1. Integration and Coordination</strong>\n- Seamless cooperation between agencies\n- Clear command and control structures\n- Regular joint exercises\n- Shared intelligence platforms\n- Unified response protocols\n\n<strong>2. Technology Integration</strong>\n- Advanced warning systems\n- Cyber defense capabilities\n- AI and machine learning applications\n- Secure communication networks\n- Automated threat detection\n\n<strong>3. Public Engagement</strong>\n- Regular citizen drills\n- Public awareness campaigns\n- Community involvement in security\n- Transparent communication\n- Educational initiatives\n\n<strong>4. Resource Management</strong>\n- Strategic resource allocation\n- Emergency stockpiles\n- Flexible response capabilities\n- Sustainable funding models\n- Efficient logistics systems\n\n<strong>5. International Cooperation</strong>\n- Intelligence sharing agreements\n- Joint training exercises\n- Technology exchanges\n- Diplomatic initiatives\n- Regional security frameworks\n\n<strong><underline> Emerging Trends</underline></strong>\n- Increased focus on cyber threats\n- Climate security considerations\n- Hybrid warfare preparedness\n- AI-driven threat analysis\n- Pandemic response integration\n\n<h3> the high-profile national security cases</h3>\n\n<strong>1. Ukraine-Russia Hybrid Warfare (2022-Present)</strong>\n• Cyber warfare tactics\n• Information warfare campaigns \n• Critical infrastructure targeting\n• Drone warfare innovations\n• Nuclear facility threats\n\n<strong>2. Taiwan Strait Tensions</strong>\n• Military demonstrations\n• Cyber operations\n• Economic security measures \n• Maritime security challenges\n• International diplomatic tensions\n\n<strong>3. Iranian Drone Program Development</strong>\n• Military technology proliferation\n• Regional power dynamics\n• International sanctions impact\n• Defense innovation patterns\n• Strategic alliance shifts\n\n<strong>4. North Korean Missile Tests</strong>\n• Advanced missile capabilities\n• Nuclear program expansion\n• Cyber warfare activities\n• International sanctions evasion\n• Regional security dynamics\n\n<strong>5. Recent Significant Cyber Attacks</strong>\n• Colonial Pipeline Attack (2021)\n• Microsoft Exchange Server Hack (2021)\n• Costa Rica Ransomware Attack (2022)\n• Government systems breaches\n• Critical infrastructure targeting\n\n<strong>6. Afghanistan Security Transition (2021)</strong>\n• Rapid government collapse\n• Military equipment capture\n• Regional security impacts\n• Humanitarian concerns\n• International terrorism risks\n\n<strong>7. Israel-Hamas Conflict (2023-24)</strong>\n• Urban warfare challenges\n• Civilian protection issues\n• Intelligence failures analysis\n• Regional stability impacts\n• International security cooperation\n\n<strong>8. AI and National Security</strong>\n• AI weapons development\n• Autonomous systems risks\n• Deepfake threats\n• Algorithm warfare\n• Data security concerns\n\n<strong>9. Climate Security Threats</strong>\n• Resource scarcity\n• Migration pressures\n• Infrastructure vulnerability\n• Food security\n• Water security\n<strong>10. Others</strong>\n<strong>a.Mumbai Terror Attacks (2008) - India</strong>\nSecurity Lapses\nPoor coastal security\nInadequate intelligence sharing\nDelayed response time\nUncoordinated crisis management\nInsufficient anti-terror preparations\n<strong>Impact</strong>\n166 people killed\nMajor economic disruption\nInternational diplomatic tensions\nExposed critical infrastructure vulnerabilities\nLed to major security reforms\n\n<strong>b. Fukushima Nuclear Disaster (2011) - Japan</strong> \nManagement Failures\nInadequate disaster preparedness\nPoor risk assessment\nInsufficient backup systems\nDelayed evacuation orders\nCommunication breakdown\n<strong>Results</strong>\nLarge-scale environmental contamination\nMass displacement\nEconomic losses\nInternational nuclear policy changes\nLong-term health concerns\n\n<strong>c. Solar Winds Hack (2020) - United States</strong>\nSecurity Vulnerabilities\nSupply chain vulnerabilities\nDelayed detection\nInadequate cybersecurity measures\nPoor monitoring systems\nLimited incident response\n<strong>Impact</strong>\nCompromised government agencies\nMajor corporate breaches\nInternational security implications\nSignificant financial losses\nPolicy reforms\n\n<strong>d.September 11 Attacks (2001) - United States</strong>\nCritical Failures\nIntelligence sharing problems\nPoor interagency coordination\nInadequate aviation security\nInsufficient threat analysis\nLimited emergency response preparation\n<strong>Consequences</strong>\n2,977 civilians killed\nMajor policy changes (Patriot Act)\nCreation of Department of Homeland Security\nIntelligence community restructuring\nInternational military campaigns\n\n<strong>Key Emerging Trends:</strong>\n• Increased cyber warfare\n• Hybrid warfare tactics\n• AI/ML integration in security\n• Climate-related security threats\n• Critical infrastructure vulnerabilities",
@@ -275,7 +297,7 @@ function getMergedNotes() {
   "isDefault": false
 },
 {
-"id": "20241027-142931-531-0017",
+"id": "20241027-142931-531-0002",
 "title": "Kamal Sir's Tip for Joint Secretary (2081.07.04)",
 "subtitle": "",
 "content": "<strong>Books/Notes Refered </strong>\n1. महेश्वर भट्टराईको नोट\n2. रणनीति योजना न्यायपालिका , यसैबाट SWOT analysis गर्ने\n3. १६ औं योजना\n4.AMB को interview (न्याय जर्नल)\n5. Bimal श्रीमान र Bhadrakali श्रीमानको DCM पढ्ने\n6.संविधानवाद-  Tek Dhungana\n7. आचार संहिता- UN Banglore etc\n8. रामबन्धुको नोट\n9. Note style- buwan Pandey\n10. सरकारी वकील दिग्दर्शन पढ्ने\n11. उदयराना मगरको किताब\n12. नरहरी घिमिरेको Innovative State नोट\n13. कुन किताबमा कुन article राम्रो छ त्यो पढ्ने\n14. उमेश मैनाली -व्यरो व्यथा\n15. कर्मचारीतन्त्रको विनिर्माण  लेख पढ्नुहोस।\n\n<strong>Language Used</strong>\n1.50 वटा Bunch of Words बनाउने\n2. Less Paper ले पुगेन Paperless नै हुनपर्यो\n3. Automation ले मात्र पुग्दैन, Autonation नै हुनुपर्यो\n4. Ready made answer बनाउने\n5. AI question आउन सक्छ, यसलाई National Security सँग जोड्ने\n6.Time पाएको भए राम्रै लेख्थ्यो भन्ने पार्ने\n7. रामबन्धुको भाषा प्रयोग गर्ने\n8. प्रश्न खण्डिकरण गरेर हेर्नेः स्थानीय, प्रदेश र संघले के गर्नुपर्छ/ प्रबन्धगत, नीतिगत, कार्यगत, संविधानगत\n9. सुधारका क्षेत्र- Parliament, parliamentary committee, Bar, People, Civil society, प्रहरी, prosecutor, judiciary, media, political parties, etc.\n10. just, fair & reasonable\n11. making, breaking and remaking of law,\n12. सुखद प्रत्याभुति जनतालाई दिनुपर्छ\n13.अलि अलि कापी भरिने, अलि अलि jargon\n14. Policy level of Question solution- policy cycle का प्रत्येकको 5-7 points बनाउने (Formulation, Implementation, Monitoring, Feedback), \n15. संविधान/policy/ AI/ योजना/SDGs\n16. Deconstruction of Bureaucracy को कुरा पनि गर्ने गरिन्छ तर यसको उत्तम विकल्प कसैले सुझाउन सकेको छैन।  यसलाई सुधार गर्नु नै यसको एकमात्र विकल्प हो।\n17. Organizational Vitality थप्ने काम गर्छ\n18. Silo Mentality, Dilly Dally, Adhoc छौ, Change resist गर्छौं, Manena Culture, whimsical culture\n17. Umesh mainali को word प्रयोग गर्ने\n18. Dubai को जस्तो 10x technique , Singapore जस्तो Regualtory Sandbox Model भित्र्याउनुपर्यो/ अपनाउनुपर्यो\n19. fund, function and functionaries\n20. हाम्रो लागि Ist & IInd paper challenging हुन्छ\n21.मनपरेको शब्दलाई Innovative तरिकाले प्रयोग गर्ने\n22. Climate Change issue लाई राम्रो तयारी गर्नुहोला , LAPA, NAPA लेख्ने\n23. निजामति सुधारका ७ वटा क्षेत्र छन्  भनी भनेर किटेर भन्ने\n24.O&M\n25.content & Contest\n26. START -UP fund-policy answer बनाइराख्ने\n19. जे पढिन्छ त्यसलाई undermine गर्ने- Automation ले पुग्दैन e-Estonia जस्तो Autonation मा जानुपर्छ\n20.पुरा भाषा नलेख्ने/ broken point मा लेख्ने\n21. English हो कि Nepali मा लेखेको थाहा नहोस्- दुवैमा लेख्ने\n22... भरपुर उपयोग गर्न सकिएन\n23.  ... soil friendly भएन\n24. SWOT analysis गरेर policy बनाइएन\n25. ritualistic भयो\n26. Eco power shifted to AI power\n27. Emotional बनाउने गरी लेख्ने- मानव अस्तित्व नै संकटमा पारेको अनुभूति भएको छ\n28. Categorise writing- अनि प्रत्येकमा २-३ वटा मात्र sub-point लेख्ने\n29. Ready Made Answer बनाउने\n30. कार्ययोजना बनाएर Bhuwan Pandey को कुरा लेख्ने\n31. Question नछुटाउने तर छोटो लेख्ने\n32. mindset मा पनि advance हुन सकेन\n33. Directive Principle मा राष्ट्रपतिको भूमिका पनि लेख्ने\n34. रचनात्मक सिर्जनात्मक हुने\n35. Constructive सुझावलाई कार्यान्वयन गर्नुपर्छ\n36. e- innovativeness चाहियो\n37. Time पुगेन भने माथि background नपढ्ने, WH question मात्र पढ्ने\n38. नेतागत, नीतिगत र नेतागत भ्रष्ट्राचार\n39. Utilitarianism principle अनुसारका नीतिहरू बन्न सकेनन\n40. Deontological Ethics\n41. thin firm of difference छ\n42. hard hitting गर्नुपर्छ, निर्मम प्रहार आवश्यक छ\n43. Organized हुने , एक पाने note बनाउने\n44. Leadership को समस्या\n45. थोरै idea ले पनि धेरै hit गर्ने\n46.नेपालमा अर्थतन्त्रका चुनौतिहरू-15 point ready made बनाउने\n47.institutional memory\n48.",
@@ -292,7 +314,18 @@ function getMergedNotes() {
 "(2081.07.04)"
 ],
 "pinned": false
-}
+},
+{
+      id: '20241026-100000-000-0001',
+      title: "Welcome to Smart Notes!",
+      subtitle: "Getting Started Guide",
+      content: "Click the + button to create a new note. You can edit, pin, and delete notes using the buttons below each note. Use the search bar to find specific notes.",
+      created: "2024-10-26T10:00:00.000Z",
+      lastModified: "2024-10-26T10:00:00.000Z",
+      category: "General",
+      tags: ["welcome", "guide"],
+      pinned: true
+  },
       // ... your other default notes ...
   ].map(note => ({ ...note, isDefault: true })); // Add isDefault flag to source code notes
 
