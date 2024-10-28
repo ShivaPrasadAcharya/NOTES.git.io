@@ -106,7 +106,7 @@ function getMergedNotes() {
   ],
   "pinned": false,
   "isDefault": false
-}
+},
   {
       id: '20241026-100100-000-0016',
       title: "Important Features",
