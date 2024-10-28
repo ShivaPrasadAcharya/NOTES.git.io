@@ -325,7 +325,7 @@ function getMergedNotes() {
       category: "General",
       tags: ["welcome", "guide"],
       pinned: true
-  },
+  }
       // ... your other default notes ...
   ].map(note => ({ ...note, isDefault: true })); // Add isDefault flag to source code notes
 
