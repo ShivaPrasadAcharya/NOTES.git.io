@@ -45,7 +45,22 @@ function loadFromLocalStorage() {
 // Function to merge default and saved notes
 function getMergedNotes() {
   const defaultNotes = [
-    {
+{
+  "id": "20241029-213156-895-0027",
+  "title": "BETTER PHRASES",
+  "subtitle": "",
+  "content": "public service delivery लाई enchance गर्ने तरिकाहरूः\n-less paper ले भएन paperless नै हुनपर्यो\n-automation ले पुग्दैन autonation नै चाहियो\n- reform ले पुग्दैन, radical change नै आवश्यक छ\n-linear growth ले पुग्दैन exponential growth नै चाहियो\nUpdate होइन, Upgrade चाहिन्छ\n\nसामान्य सुधार मात्र पर्याप्त छैन\nपूर्ण स्तरोन्नति आवश्यक छ\n\nSystem improvement होइन, System transformation हुनुपर्छ\nप्रणालीगत सुधार मात्र पुग्दैन\nपूर्ण रूपान्तरण आवश्यक छ\n\nDigital presence होइन, Digital excellence चाहिन्छ\nअनलाइन उपस्थिति मात्र पर्याप्त छैन\nडिजिटल क्षेत्रमा उत्कृष्टता हासिल गर्नुपर्छ\n\nCitizen Satisfaction ले होइन Citizen Enthuasiasm & Engagement चाहियो\nसेवाग्राही सन्तुष्टि होइन, सेवाग्राही उत्साह चाहिन्छ\nसन्तुष्टि मात्र पर्याप्त छैन\nनागरिक उत्साह र सहभागिता आवश्यक छ\n\nFeedback collection होइन, Feedback implementation चाहिन्छ\nप्रतिक्रिया संकलन मात्र पुग्दैन\nप्रतिक्रियाको पूर्ण कार्यान्वयन आवश्यक छ\n\nMonitoring होइन, Mentoring चाहिन्छ\nअनुगमन मात्र पर्याप्त छैन\nमार्गदर्शन र सहजीकरण आवश्यक छ\n\nHierarchy होइन, Network structure चाहिन्छ\nपदसोपान मात्र उपयुक्त छैन\nसञ्जालमा आधारित संरचना आवश्यक छ\n\nRoutine work होइन, Result-oriented work चाहिन्छ\nदैनिक काम मात्र पुग्दैन\nनतिजामुखी कार्यप्रणाली आवश्यक छ\n\nInformation sharing होइन, Knowledge creation चाहिन्छ\nसूचना आदानप्रदान मात्र पर्याप्त छैन\nज्ञान सिर्जना र विकास आवश्यक छ\n\nTime-bound होइन, Time-smart हुनुपर्छ\nसमयबद्धता मात्र पुग्दैन\nसमय व्यवस्थापनमा दक्षता चाहिन्छ\n\nCapacity building होइन, Capacity utilization चाहिन्छ\nक्षमता विकास मात्र पर्याप्त छैन\nक्षमताको पूर्ण उपयोग आवश्यक छ\n\nTransparency होइन, Proactive disclosure चाहिन्छ\nपारदर्शिता मात्र पुग्दैन\nस्वतःस्फूर्त सूचना प्रवाह आवश्यक छ\n\nOne-window होइन, No-window service चाहिन्छ\nएकद्वार प्रणाली मात्र पर्याप्त छैन\nसीधा सेवा प्रवाह आवश्यक छ\n\nComplaint handling होइन, Complaint prevention चाहिन्छ\nगुनासो व्यवस्थापन मात्र पुग्दैन\nगुनासो आउनै नदिने व्यवस्था आवश्यक छ\n\nFile tracking होइन, File completion चाहिन्छ\nफाइल ट्र्याकिङ मात्र पर्याप्त छैन\nफाइल फर्छ्यौट प्राथमिकता हुनुपर्छ\n\nService delivery होइन, Service excellence चाहिन्छ\nसेवा प्रवाह मात्र पुग्दैन\nउत्कृष्ट सेवा प्रवाह आवश्यक छ\n\nOutput focused होइन, Outcome focused हुनुपर्छ\nप्रतिफल मात्र होइन\nप्रभाव केन्द्रित हुनुपर्छ\n\nData collection होइन, Data utilization चाहिन्छ\nतथ्यांक संकलन मात्र पर्याप्त छैन\nतथ्यांकको प्रभावकारी प्रयोग आवश्यक छ\n\nCost cutting होइन, Value creation चाहिन्छ\nलागत कटौती मात्र पुग्दैन\nमूल्य अभिवृद्धि आवश्यक छ\n\nProblem solving होइन, Problem prevention चाहिन्छ\nसमस्या समाधान मात्र पर्याप्त छैन\nसमस्या आउनै नदिने रणनीति चाहिन्छ\n\nबजेट allocation होइन, बजेट optimization चाहिन्छ\nबजेट विनियोजन मात्र होइन\nबजेटको उच्चतम सदुपयोग आवश्यक छ\n\nInfrastructure development होइन, Infrastructure intelligence चाहिन्छ\nभौतिक संरचना निर्माण मात्र पुग्दैन\nस्मार्ट पूर्वाधार आवश्यक छ\n\nPlanning होइन, Strategic foresight चाहिन्छ\nयोजना मात्र पर्याप्त छैन\nदूरदर्शी रणनीतिक सोच आवश्यक छ\n\nEmployee satisfaction होइन, Employee engagement चाहिन्छ\nकर्मचारी सन्तुष्टि मात्र पुग्दैन\nपूर्ण कर्मचारी संलग्नता आवश्यक छ\n\nDigital literacy होइन, Digital mastery चाहिन्छ\nडिजिटल साक्षरता मात्र पर्याप्त छैन\nडिजिटल दक्षता आवश्यक छ\n\nStandard operating procedure होइन, Smart operating ecosystem चाहिन्छ\nमानक कार्यविधि मात्र पुग्दैन\nस्मार्ट कार्य वातावरण आवश्यक छ\n\nPerformance evaluation होइन, Performance elevation चाहिन्छ\nकार्यसम्पादन मूल्यांकन मात्र होइन\nकार्यसम्पादन उत्कर्ष आवश्यक छ\n\nChange management होइन, Change leadership चाहिन्छ\nपरिवर्तन व्यवस्थापन मात्र पुग्दैन\nपरिवर्तनको नेतृत्व आवश्यक छ\n\nResource allocation होइन, Resource multiplication चाहिन्छ\nस्रोत बाँडफाँड मात्र होइन\nस्रोत सिर्जना र वृद्धि आवश्यक छ\n\nWork from home होइन, Work from anywhere चाहिन्छ\nघरबाट काम मात्र होइन\nजहाँबाट पनि काम गर्न सक्ने व्यवस्था चाहिन्छ\n\nDecision making होइन, Decision intelligence चाहिन्छ\nनिर्णय गर्ने मात्र होइन\nबुद्धिमत्तापूर्ण निर्णय आवश्यक छ\n\nService integration होइन, Service innovation चाहिन्छ\nसेवा एकीकरण मात्र पुग्दैन\nसेवामा नवीनता आवश्यक छ\n\nQuality control होइन, Quality culture चाहिन्छ\nगुणस्तर नियन्त्रण मात्र होइन\nगुणस्तरीय संस्कृति आवश्यक छ\n\nProject completion होइन, Project perfection चाहिन्छ\nआयोजना सम्पन्न मात्र होइन\nउत्कृष्ट आयोजना कार्यान्वयन आवश्यक छ\n\nCitizen charter होइन, Citizen partnership चाहिन्छ\nनागरिक बडापत्र मात्र पुग्दैन\nनागरिक साझेदारी आवश्यक छ\n\nTraining program होइन, Performance transformation चाहिन्छ\nतालिम कार्यक्रम मात्र होइन\nकार्यसम्पादन रूपान्तरण आवश्यक छ\n\nPolicy compliance होइन, Policy excellence चाहिन्छ\nनीति पालना मात्र पुग्दैन\nनीतिगत उत्कृष्टता आवश्यक छ\n\nRisk management होइन, Risk intelligence चाहिन्छ\nजोखिम व्यवस्थापन मात्र होइन\nजोखिम पूर्वानुमान र नियन्त्रण आवश्यक छ\n\nStakeholder consultation होइन, Stakeholder collaboration चाहिन्छ\nसरोकारवाला परामर्श मात्र पुग्दैन\nसरोकारवाला सहकार्य आवश्यक छ\n\nService accessibility होइन, Service ubiquity चाहिन्छ\nसेवामा पहुँच मात्र होइन\nसर्वव्यापी सेवा प्रवाह आवश्यक छ",
+  "created": "2024-10-29T15:46:56.895Z",
+  "lastModified": "2024-10-29T15:46:56.895Z",
+  "category": "General",
+  "tags": [
+    "better",
+    "phrases"
+  ],
+  "pinned": false,
+  "isDefault": false
+},    
+{
   "id": "20241028-193339-551-0020",
   "title": "Prof. phrases III",
   "subtitle": "सहसचिव",
@@ -77,21 +92,22 @@ function getMergedNotes() {
   "pinned": false,
   "isDefault": false
 },
-  {
-  "id": "20241028-102646-132-0018",
-  "title": "Rajendra sir,",
-  "subtitle": "",
-  "content": "&bull;expert होइन moralist चाहियो/ हुनुपर्यो (Wonkery or moralist)\n&bull;RRR-Rule, Routine and Red Tape\n&bull;निजामति सेवामा celebrity बन्ने होइन\n&bull;निजमति सेवामा बढ्ने होइन अड्ने हो\n&bull;plum posting & punishment posting\n&bull;combining the hair one by one, cooking rice grain by grain-Laotse\n&bull;Darling of people हुनपर्यो\n&bull;Comprehensive Democracy \n&bull;Overt Politicization-मनपरको सचिवलाई मन्त्रालयमा मनत्रीले तान्ने\n&bull;when people are lame they try to blame\n&bull;ल्याकत, लगन, लोकप्रियता, लोकाचार- निजामति सेवा\n&bull;चिहानको गणतनत्रमा मात्र सबै समान हुन्छन्\n&bull;कार विग्रियो भनेर बयलगाडाम हिड्न सकिन्न, कार नै मर्मत गर्नुपर्छ\n&bull;मरिचमानले २०४४ सालमा सुकेका पकहरू (dead wood) सफा गर्ने नाममा १४४ जना कर्मचारीलाई अवकाटा दिएका छन्\n&bull;अध्यारोलाई सराप्नुभन्दा महिन बाल्नु राम्रो हो\n&bull;घर घरको खबर पल पलमा लिने क्षमता राख्नुपर्छ स्थानीय सरकारले\n&bull;Deep State-TV serial",
-  "created": "2024-10-28T04:41:46.132Z",
-  "lastModified": "2024-10-28T04:41:46.132Z",
+    {
+  "id": "20241028-192548-557-0018",
+  "title": "professional phrases",
+  "subtitle": "सहसचिव",
+  "content": "<strong>Emotional Phrases </strong>\n*Bureaucratic Pathology- काम गर्नु छैन, पढेर बस्ने\n*Logical End मा पुर्‍याउन सकिएको छैन/ पुगेको अवस्था छैन\n*life लाई Easy बनाउनुपर्नेमा हामीले life लाई busy बनाइरहेका छौं\n*Gender Justice-Gender मा बढी focus भइयो Justice मा कम focus भइयो\n* Cultural Corruption-राज्यलाई गोत्र मतलब भएन उमेर मतलब भयो (विवाहमा)/ एउटै गोत्रमा विवाह गराइदिने\n*पहिचानको पीडामा संयीयता\n*Initiatives/Model/ Approach/ Principle/System\n*Regulatory Compliance\n*Red Tapism\n*Bureaucratic Inertia\n*Silo Mentality\n*Organizational Rigidity\n*Goal Displacement-when goal is not attained then goal is changed. (But we have to change the strategy)\n*Bureaucratic Drift-the gradual drift of bureaucratic agencies away from their original mandates/intention of policymakers\n*Bureaucratic Alienation-the feeling of powerlessness & estrangement experienced by employee due to repetitive & meaningless task.\n*Micromanagement\n*Resource Misallocation\n*Duplication of Effort\n*Policy Crisis\n*Accountability Gap\n*Regulatory Capture\n*Rent Seeking Tendency\n*Abuse of Discretionary Power\n*Dilly Dallying\n*Manena Culture-भोलिवाद\n*Multi-Headed Hydra\n*Less paper to paperless\n*Empire Building\n*Circular Reporting-पुनः निर्णय गर्नु, टिप्पणि उठाउनु\n*Authority Dilution- too much delegation leading to unclear accountability & efficiency\n*Internal Politics\n*Information bottleneck-obstruction in the flow of information\n*Task Overload\n*Counterproductive behaviour\n*Box Ticking- process oriented and excessively formal\n*Bureaucratic Backlog-unresolved issues\n*Feather Bedding-Hiring more employees than necessary (eg: प्रदेशले अदालतै पिच्छे pvt. कानून व्यवसायी नियुक्ति गर्नू)\n*Analysis Paralysis-Over analysis of issue\n*Kafkaesque Procedures- Process & procedures that are excessively complex, illogical or absurd\n*Jobbery= Job+Robbery\n*Status Quo\n*Decision Drift\n*Erosion of Trust\n*Turf wars-Conflict between different departments/agencies over control of resources/areas of responsibility\n*Vicious Cycle\n*Symbolic Compliance to Rules-compliance to regualation & directives supreficially\n*Organization Blot-Excessive growth of an org. interms of staffs & departments leading to inefficiency & waste (विशेष गरी प्रदेसमा देखिएको छ)/ गठन आदेशबाट विकास समिति",
+  "created": "2024-10-28T13:40:48.557Z",
+  "lastModified": "2024-10-28T13:40:48.557Z",
   "category": "General",
   "tags": [
-    "rajendra",
-    "sir,"
+    "professional",
+    "phrases"
   ],
   "pinned": false,
   "isDefault": false
 },
+  
 {
   "id": "20241028-193217-070-0017",
   "title": "Answering Techniques",
@@ -132,16 +148,16 @@ function getMergedNotes() {
 "pinned": false
 },
 {
-  "id": "20241028-192548-557-0014",
-  "title": "professional phrases",
-  "subtitle": "सहसचिव",
-  "content": "<strong>Emotional Phrases </strong>\n*Bureaucratic Pathology- काम गर्नु छैन, पढेर बस्ने\n*Logical End मा पुर्‍याउन सकिएको छैन/ पुगेको अवस्था छैन\n*life लाई Easy बनाउनुपर्नेमा हामीले life लाई busy बनाइरहेका छौं\n*Gender Justice-Gender मा बढी focus भइयो Justice मा कम focus भइयो\n* Cultural Corruption-राज्यलाई गोत्र मतलब भएन उमेर मतलब भयो (विवाहमा)/ एउटै गोत्रमा विवाह गराइदिने\n*पहिचानको पीडामा संयीयता\n*Initiatives/Model/ Approach/ Principle/System\n*Regulatory Compliance\n*Red Tapism\n*Bureaucratic Inertia\n*Silo Mentality\n*Organizational Rigidity\n*Goal Displacement-when goal is not attained then goal is changed. (But we have to change the strategy)\n*Bureaucratic Drift-the gradual drift of bureaucratic agencies away from their original mandates/intention of policymakers\n*Bureaucratic Alienation-the feeling of powerlessness & estrangement experienced by employee due to repetitive & meaningless task.\n*Micromanagement\n*Resource Misallocation\n*Duplication of Effort\n*Policy Crisis\n*Accountability Gap\n*Regulatory Capture\n*Rent Seeking Tendency\n*Abuse of Discretionary Power\n*Dilly Dallying\n*Manena Culture-भोलिवाद\n*Multi-Headed Hydra\n*Less paper to paperless\n*Empire Building\n*Circular Reporting-पुनः निर्णय गर्नु, टिप्पणि उठाउनु\n*Authority Dilution- too much delegation leading to unclear accountability & efficiency\n*Internal Politics\n*Information bottleneck-obstruction in the flow of information\n*Task Overload\n*Counterproductive behaviour\n*Box Ticking- process oriented and excessively formal\n*Bureaucratic Backlog-unresolved issues\n*Feather Bedding-Hiring more employees than necessary (eg: प्रदेशले अदालतै पिच्छे pvt. कानून व्यवसायी नियुक्ति गर्नू)\n*Analysis Paralysis-Over analysis of issue\n*Kafkaesque Procedures- Process & procedures that are excessively complex, illogical or absurd\n*Jobbery= Job+Robbery\n*Status Quo\n*Decision Drift\n*Erosion of Trust\n*Turf wars-Conflict between different departments/agencies over control of resources/areas of responsibility\n*Vicious Cycle\n*Symbolic Compliance to Rules-compliance to regualation & directives supreficially\n*Organization Blot-Excessive growth of an org. interms of staffs & departments leading to inefficiency & waste (विशेष गरी प्रदेसमा देखिएको छ)/ गठन आदेशबाट विकास समिति",
-  "created": "2024-10-28T13:40:48.557Z",
-  "lastModified": "2024-10-28T13:40:48.557Z",
+  "id": "20241028-102646-132-0014",
+  "title": "Rajendra sir,",
+  "subtitle": "",
+  "content": "&bull;expert होइन moralist चाहियो/ हुनुपर्यो (Wonkery or moralist)\n&bull;RRR-Rule, Routine and Red Tape\n&bull;निजामति सेवामा celebrity बन्ने होइन\n&bull;निजमति सेवामा बढ्ने होइन अड्ने हो\n&bull;plum posting & punishment posting\n&bull;combining the hair one by one, cooking rice grain by grain-Laotse\n&bull;Darling of people हुनपर्यो\n&bull;Comprehensive Democracy \n&bull;Overt Politicization-मनपरको सचिवलाई मन्त्रालयमा मनत्रीले तान्ने\n&bull;when people are lame they try to blame\n&bull;ल्याकत, लगन, लोकप्रियता, लोकाचार- निजामति सेवा\n&bull;चिहानको गणतनत्रमा मात्र सबै समान हुन्छन्\n&bull;कार विग्रियो भनेर बयलगाडाम हिड्न सकिन्न, कार नै मर्मत गर्नुपर्छ\n&bull;मरिचमानले २०४४ सालमा सुकेका पकहरू (dead wood) सफा गर्ने नाममा १४४ जना कर्मचारीलाई अवकाटा दिएका छन्\n&bull;अध्यारोलाई सराप्नुभन्दा महिन बाल्नु राम्रो हो\n&bull;घर घरको खबर पल पलमा लिने क्षमता राख्नुपर्छ स्थानीय सरकारले\n&bull;Deep State-TV serial",
+  "created": "2024-10-28T04:41:46.132Z",
+  "lastModified": "2024-10-28T04:41:46.132Z",
   "category": "General",
   "tags": [
-    "professional",
-    "phrases"
+    "rajendra",
+    "sir,"
   ],
   "pinned": false,
   "isDefault": false
