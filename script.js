@@ -45,6 +45,21 @@ function loadFromLocalStorage() {
 // Function to merge default and saved notes
 function getMergedNotes() {
   const defaultNotes = [
+    {
+  "id": "20241030-080651-214-1111",
+  "title": "Print (Tempo)",
+  "subtitle": "Pesi suchi",
+  "content": "Pokhara University\n<a href=\"https://shivaprasadacharya.github.io/nepal_timeline.git.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Open Notes in New Tab</a>",
+  "created": "2024-10-30T02:21:51.214Z",
+  "lastModified": "2024-10-30T02:21:51.214Z",
+  "category": "General",
+  "tags": [
+    "print",
+    "(tempo)"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
 {
   "id": "20241029-213156-895-0027",
   "title": "BETTER PHRASES",
