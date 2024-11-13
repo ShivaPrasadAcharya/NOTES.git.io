@@ -75,7 +75,7 @@ function getMergedNotes() {
     "justice"
   ],
   "pinned": false,
-  "isDefault": false
+  "isDefault": true
 },
     {
   "id": "20241031-135223-458-0022",
