@@ -62,6 +62,21 @@ function getMergedNotes() {
   "pinned": false,
   "isDefault": false
 },
+{
+  "id": "20241116-170536-056-0027",
+  "title": "Better phrases",
+  "subtitle": "",
+  "content": "Cloud-based E-governance system को विकास\n\n<b>अन्तर्राष्ट्रिय अनुभव:</b>\nसिंगापुरको GovTech प्रणाली\nएस्टोनियाको e-Estonia कार्यक्रम\nदक्षिण कोरियाको KONEPS (Korea Online  e-pocurement System)",
+  "created": "2024-11-16T11:20:36.056Z",
+  "lastModified": "2024-11-16T11:20:36.056Z",
+  "category": "General",
+  "tags": [
+    "better",
+    "phrases"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
     {
   "id": "20241116-164615-231-0026",
   "title": "कबिर सायरी",
