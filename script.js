@@ -299,7 +299,7 @@ function getMergedNotes() {
 "id": "20241027-143533-100-0008",
 "title": "Diversity Management",
 "subtitle": "",
-"content": "<strong>Diversity Areas </strong>\n* Gender diversity quotas (e.g., Norway: 40% female directors)\n* Skills and expertise diversity\n* Cultural and ethnic diversity\n* Age diversity and term limits",
+"content": "<strong>Diversity Areas </strong>\n* Gender diversity quotas (e.g., Norway: 40% female directors)\n* Skills and expertise diversity\n* Cultural and ethnic diversity\n* Age diversity and term limits\n*सबको साथ सबको विकास",
 "created": "2024-10-27T08:50:33.100Z",
 "lastModified": "2024-10-27T08:50:33.100Z",
 "category": "General",
