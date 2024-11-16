@@ -63,6 +63,21 @@ function getMergedNotes() {
   "isDefault": false
 },
     {
+  "id": "20241116-164615-231-0026",
+  "title": "कबिर सायरी",
+  "subtitle": "",
+  "content": "१. पत्थर पूज से अगर हरी मिले तो मे पहाड पूजु।\nशङ्कराचार्य व्याख्याः पसलमा रहेका मूर्तिको पूजा गरिंदैन। हामी पत्थरको पूजा गर्दैनौ. हामी प्राणको पूजा गर्छौं।",
+  "created": "2024-11-16T11:01:15.231Z",
+  "lastModified": "2024-11-16T11:01:15.231Z",
+  "category": "General",
+  "tags": [
+    "कबिर",
+    "सायरी"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
+    {
   "id": "20241116-101848-890-0024",
   "title": "2.6 Private Sector in Nepal (IIIrd paper)",
   "subtitle": "Efforts, Achivements and Challenges (available in handwritten notes too)",
