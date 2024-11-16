@@ -78,6 +78,22 @@ function getMergedNotes() {
   "isDefault": false
 },
     {
+  "id": "20241116-164709-595-0025",
+  "title": "GIDC & NIC",
+  "subtitle": "comparision of data center of india and nepal",
+  "content": "Component | India (Annual) | Nepal (Annual)\n----------|---------------|----------------\nBudget Allocation | $500M+ | $5M+\nTechnical Staff | 1000+ | <100\nResearch Programs | Multiple | Limited\nInternational Partnerships | Extensive | Minimal",
+  "created": "2024-11-16T11:02:09.595Z",
+  "lastModified": "2024-11-16T11:02:09.595Z",
+  "category": "General",
+  "tags": [
+    "gidc",
+    "&",
+    "nic"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
+    {
   "id": "20241116-101848-890-0024",
   "title": "2.6 Private Sector in Nepal (IIIrd paper)",
   "subtitle": "Efforts, Achivements and Challenges (available in handwritten notes too)",
