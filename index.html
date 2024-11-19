@@ -3,462 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nepal Legislative Process</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>Smart Notes</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>विधेयक प्रक्रिया फ्लोचार्ट</h1>
-        <p>नेपालको संघीय संसदमा विधेयक पारित गर्ने प्रक्रियाको चित्रण</p>
-        <div class="chart">
-            <pre class="mermaid">
-                flowchart TD
-                A[विधेयक प्रस्तुत] --> B{अर्थ विधेयक हो?}
-                B -->|हो| C[प्रतिनिधि सभामा मात्र प्रस्तुत]
-                B -->|होइन| D[कुनै पनि सदनमा प्रस्तुत]
-                C --> E[प्रतिनिधि सभाद्वारा पारित]
-                E --> F[राष्ट्रिय सभामा पठाइने]
-                F --> G{15 दिन भित्र सुझाव?}
-                G -->|छ| H[सुझाव सहित फिर्ता]
-                G -->|छैन| I[प्रतिनिधि सभाले राष्ट्रपति समक्ष पेश]
-                H --> J[प्रतिनिधि सभामा छलफल]
-                J --> K[उचित सुझाव समावेश]
-                D --> L[सदनद्वारा पारित]
-                L --> M[अर्को सदनमा पठाइने]
-                M --> N{2 महिना भित्र?}
-                N -->|पारित| O[राष्ट्रपति समक्ष पेश]
-                N -->|अस्वीकृत/संशोधन| P[उत्पत्ति सदनमा फिर्ता]
-                P --> Q[उत्पत्ति सदनमा पुनर्विचार]
-                Q --> R[बहुमतले पुन: पारित]
-                K --> O
-                I --> O
-                R --> O
-                O --> S{राष्ट्रपतिको निर्णय}
-                S -->|15 दिन भित्र प्रमाणीकरण| T[ऐन बन्ने]
-                S -->|पुनर्विचारको लागि फिर्ता| U[सदनमा पुनर्विचार]
-                U --> V[दुवै सदनले पुन: पारित]
-                V --> W[राष्ट्रपति समक्ष पेश]
-                W --> X[15 दिन भित्र प्रमाणीकरण]
-                X --> T
-            </pre>
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">
+                    <i class="fas fa-search text-muted"></i>
+                </span>
+                <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Search notes...">
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <h1>Federal Legislative Process (art. 110-113)</h1>
-        <p>This flowchart illustrates the process of passing bills in Nepal's Federal Parliament, including Money Bills and General Bills.</p>
-        <div class="chart">
-            <pre class="mermaid">
-                graph TD
-                A[Bill Introduced] --> B{Money Bill?}
-                B --> |Yes|C[House of Representatives]
-                B --> |No|D[Any House]
-                
-                C --> E[Passed by HoR]
-                E --> F[To National Assembly]
-                
-                F --> G{Within 15 days}
-                G --> |Suggestion|H[Back to HoR]
-                G --> |No Action|I[To President]
-                
-                D --> J[Passed by House]
-                J --> K[Other House]
-                
-                K --> L{Within 2 months}
-                L --> |Passed|M[To President]
-                L --> |Rejected|N[Back to Origin]
-                
-                N --> O[Reconsidered]
-                O --> M
-                
-                H --> P[Review in HoR]
-                P --> M
-                
-                M --> Q{President}
-                Q --> |15 days|R[Becomes Act]
-                Q --> |Return|S[Reconsider]
-                
-                S --> T[Re-pass]
-                T --> U[To President]
-                U --> R
-            </pre>
+    <!-- Form Section -->
+    <div class="container mb-5">
+        <div id="formSection" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4" id="formTitle">Add New Note</h3>
+                        <form id="noteForm">
+                            <input type="hidden" id="editingId">
+                            
+                            <div class="mb-3">
+                                <label for="noteNumber" class="form-label">Note Number</label>
+                                <input type="text" class="form-control" id="noteNumber" required 
+                                       maxlength="4" pattern="\d{4}">
+                                <div class="form-text">
+                                    Enter a unique 4-digit number. Date and time will be automatically added.
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter a valid 4-digit number.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Title</label>
+                                <input type="text" class="form-control" id="title" required>
+                                <div class="invalid-feedback">
+                                    Title is required.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subtitle" class="form-label">Subtitle</label>
+                                <input type="text" class="form-control" id="subtitle">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="content" class="form-label">Content</label>
+                                <textarea class="form-control" id="content" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Content is required.
+                                </div>
+                            </div>
+
+                            <div class="data-preview">
+                                <h5 class="mb-3">Generated Data Preview:</h5>
+                                <button type="button" class="copy-btn" onclick="copyData()">
+                                    <i class="fas fa-copy"></i> Copy
+                                </button>
+                                <pre id="dataPreview" class="bg-light p-2 rounded"></pre>
+                            </div>
+
+                            <div class="text-end mt-3">
+                                <button type="button" class="btn btn-secondary me-2" onclick="hideForm()">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Save Note</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notes Container -->
+        <div id="notesContainer" class="row">
+            <!-- Notes will be dynamically inserted here -->
+        </div>
+
+        <!-- No Notes Message -->
+        <div id="noNotesMessage" class="text-center mt-5" style="display: none;">
+            <h4 class="text-muted">No notes found</h4>
+            <p>Click the + button to create a new note</p>
         </div>
     </div>
 
-    <div class="container">
-        <h1>Treaty Ratification Process in Nepal</h1>
-        <div class="chart">
-            <pre class="mermaid">
-                flowchart TD
-                A[Treaty Proposal] --> B{Provincial Matter?}
-                B -->|Yes| C[Province Consultation]
-                B -->|No| D[Federal Government]
-                
-                C --> D
-                D --> E{Treaty Type}
-                
-                E -->|Special Treaty| F[Two-thirds Required]
-                E -->|General Treaty| G[Simple Majority]
-                
-                F --> H[Special Categories]
-                H --> I[Peace & Friendship]
-                H --> J[Security Alliance]
-                H --> K[Nepal Boundaries]
-                H --> L[Natural Resources]
-                
-                I --> M[Two-thirds Majority in Both Houses]
-                J --> M
-                K --> M
-                L --> M
-                
-                G --> N[Simple Majority in House of Representatives]
-                
-                M --> P[To President]
-                N --> P
-                
-                P --> Q{Presidential Review}
-                Q -->|Assent| R[Treaty Implementation]
-                Q -->|Return| S[Parliament Reconsideration]
-                
-                S --> T[Re-pass]
-                T --> U[Back to President]
-                U --> R
-                
-</pre>
-</div>
-</div>
-<div class="container">
-    <h1>नेपालमा सन्धिको अनुमोदन पक्रिया</h1>
-    <div class="chart">
-        <pre class="mermaid">
-            flowchart TD
-    A[सन्धि प्रस्ताव] --> B{प्रदेशको अधिकार क्षेत्रमा पर्छ?}
-    B -->|पर्छ| C[सम्बन्धित प्रदेशसँग परामर्श]
-    B -->|पर्दैन| D[संघीय सरकारले प्रक्रिया अगाडि बढाउने]
-    C --> D
-    D --> E{सन्धिको प्रकृति?}
-    
-    E -->|विशेष महत्वको सन्धि| F[दुई तिहाई बहुमत आवश्यक]
-    E -->|साधारण प्रकृतिको सन्धि| G[साधारण बहुमत पर्याप्त]
-    
-    F --> H{विषयहरू}
-    H --> I[शान्ति र मैत्री]
-    H --> J[सुरक्षा एवं सामरिक सम्बन्ध]
-    H --> K[नेपाल राज्यको सीमाना]
-    H --> L[प्राकृतिक स्रोत र बाँडफाँड]
-    
-    I --> M[संघीय संसदका दुवै सदनमा दुई तिहाई बहुमतद्वारा अनुमोदन]
-    J --> M
-    K --> M
-    L --> M
-    
-    G --> N[प्रतिनिधि सभाको बैठकमा उपस्थित सदस्यहरूको साधारण बहुमतद्वारा अनुमोदन]
-    
-    M --> O[सन्धि कार्यान्वयन]
-    N --> O
-    
-    style F fill:#ffcccc
-    style G fill:#ccffcc
-    style M fill:#ffe6e6
-    style N fill:#e6ffe6
-</pre>
-</div>
-</div>
-<div class="container">
-    <h1>Formation of Council of Minister</h1>
-    <div class="chart">
-        <pre class="mermaid">
-            graph TD
-    A[Election Results] --> B{Single Party Majority?}
-    B -->|Yes| C[Party Leader becomes PM]
-    B -->|No| D{Coalition Majority?}
-    
-    D -->|Yes| E[Coalition Leader PM]
-    D -->|No| F[Largest Party Leader PM]
-    
-    E --> G{Vote of Confidence?}
-    F --> G
-    
-    G -->|Yes| H[Continues as PM]
-    G -->|No| I{Any Member Shows Majority?}
-    
-    I -->|Yes| J[New PM]
-    I -->|No| K[House Dissolved]
-    
-    J --> L{Vote of Confidence?}
-    L -->|Yes| H
-    L -->|No| K
-    
-    H --> M[No Confidence Motion]
-    M --> N{25% Support & Names New PM?}
-    N -->|Yes| O{Gets Majority?}
-    N -->|No| H
-    
-    O -->|Yes| P[New PM Takes Office]
-    O -->|No| H
-</pre>
-</div>
-</div>
-<div class="container">
-    <h1>संविधान संशोधन पक्रिया</h1>
-    <div class="chart">
-        <pre class="mermaid">
-            flowchart TD
-    A[संविधान संशोधन प्रस्ताव] --> B{प्रतिकूल छ?}
-    B -->|छ| C[संशोधन गर्न सकिदैन]
-    B -->|छैन| D[संघीय संसदको कुनै पनि सदनमा विधेयक पेश]
-    
-    D --> E[30 दिन भित्र सार्वजनिक प्रकाशन]
-    
-    E --> F{प्रदेश सीमाना वा अनुसूची-६ सँग सम्बन्धित?}
-    
-    F -->|होइन| J[संघीय संसदमा मतदान]
-    
-    F -->|हो| G[30 दिन भित्र प्रदेश सभामा पठाउने]
-    
-    G --> H[प्रदेश सभाको निर्णय - 3 महिना भित्र]
-    
-    H --> I{बहुसंख्यक प्रदेश सभाले अस्वीकृत?}
-    
-    I -->|हो| K[विधेयक निष्क्रिय]
-    
-    I -->|होइन| J
-    
-    J --> L{दुई तिहाई बहुमत?}
-    
-    L -->|छैन| M[विधेयक अस्वीकृत]
-    
-    L -->|छ| N[राष्ट्रपति समक्ष पेश]
-    
-    N --> O[15 दिन भित्र प्रमाणीकरण]
-    
-    O --> P[संविधान संशोधन लागू]
-</pre>
-</div>
-</div>
-<div class="container">
-    <h1>Constitution Amendment Process in Nepal</h1>
-    <div class="chart">
-        <pre class="mermaid">
-            flowchart TD
-    A[Constitutional Amendment Proposal] --> B{Is it adverse to basic features?}
-    B -->|Yes| C[Cannot be amended]
-    B -->|No| D[Bill presented in any house of Federal Parliament]
-    
-    D --> E[Public publication within 30 days]
-    
-    E --> F{Related to provincial boundary or Schedule-6?}
-    
-    F -->|No| J[Voting in Federal Parliament]
-    
-    F -->|Yes| G[Send to Provincial Assembly within 30 days]
-    
-    G --> H[Provincial Assembly Decision - within 3 months]
-    
-    H --> I{Rejected by majority of Provincial Assemblies?}
-    
-    I -->|Yes| K[Bill becomes inactive]
-    
-    I -->|No| J
-    
-    J --> L{Two-thirds majority?}
-    
-    L -->|No| M[Bill rejected]
-    
-    L -->|Yes| N[Presented to President]
-    
-    N --> O[Authentication within 15 days]
-    
-    O --> P[Constitutional Amendment comes into effect]
-</pre>
-</div>
-</div>
-<div class="container">
-    <h1>Extradition Process </h1>
-    <div class="chart">
-        <pre class="mermaid">
-            flowchart TD
-    A[विदेशी राज्यबाट सुपुर्दगीको अनुरोध] --> B{अनुरोध माध्यम}
-    
-    B -->|तत्काल पक्राउको लागि| C[सोझै गृह मन्त्रालयमा]
-    B -->|नियमित प्रक्रिया| D[कूटनैतिक माध्यम मार्फत]
-    
-    C --> E[प्रथम दृष्टिमा अभियुक्त देखिने प्रमाण वा फैसलाको आधारमा पक्राउ]
-    E --> F[३ दिनभित्र माग गर्ने राज्यलाई जानकारी]
-    F --> G[७ दिनभित्र कूटनैतिक माध्यमबाट औपचारिक अनुरोध]
-    
-    D --> H[परराष्ट्र मन्त्रालय मार्फत गृह मन्त्रालयमा]
-    G --> H
-    
-    H --> I[गृह मन्त्रालयद्वारा १५ दिनभित्र अध्ययन र जाँचबुझ]
-    
-    I --> J{कारबाही अघि बढाउने?}
-    J -->|पर्याप्त विवरण नभए| K[थप विवरण माग]
-    K --> H
-    
-    J -->|हो| L[प्रमुख जिल्ला अधिकारीलाई आदेश]
-    J -->|होइन| M[माग गर्ने राज्यलाई जानकारी]
-    
-    L --> N[पक्राउ पूर्जी जारी]
-    N --> O[२४ घण्टाभित्र जिल्ला अदालतमा पेश]
-    
-    O --> P[अदालतको आदेशले थुनामा राख्ने]
-    P --> Q[७ दिनभित्र जिल्ला सरकारी वकील मार्फत अदालतमा प्रतिवेदन]
-    
-    Q --> R[अदालतद्वारा सुपुर्दगी सम्बन्धी जाँचबुझ]
-    
-    R --> S{अदालतको निर्णय}
-    S -->|सुपुर्दगी गर्न मिल्ने| T[४५ दिनसम्म थुनामा राख्ने आदेश]
-    S -->|सुपुर्दगी गर्न नमिल्ने| U[थुनामुक्त गर्ने आदेश]
-    
-    T --> V[३ दिनभित्र माग गर्ने राज्यलाई जानकारी]
-    V --> W[३० दिनभित्र सुपुर्दगीको व्यवस्था]
-    
-    W --> X[स्थान, मिति र समय निर्धारण]
-    X --> Y[सुपुर्दगी कार्यान्वयन]
-    
-    U --> Z[माग गर्ने राज्यलाई जानकारी]
+    <!-- Add Note Button -->
+    <button class="add-note-btn" onclick="showForm()" title="Add New Note">
+        <i class="fas fa-plus"></i>
+    </button>
 
-    style A fill:#f9e79f,stroke:#000000
-    style B fill:#aed6f1,stroke:#000000
-    style J fill:#aed6f1,stroke:#000000
-    style S fill:#aed6f1,stroke:#000000
-    style I fill:#d5f5e3,stroke:#000000
-    style R fill:#d5f5e3,stroke:#000000
-    style T fill:#f08080,stroke:#000000
-    style U fill:#f08080,stroke:#000000
-</pre>
-</div>
-</div>
-
-<div class="container">
-    <h1>MLA Process in Nepal</h1>
-    <div class="chart">
-        <pre class="mermaid">
-
-            flowchart TD
-    A[अदालतमा मुद्दा विचाराधीन] --> B{पारस्परिक सहायता आवश्यक छ?}
-    B -->|छ| C[अदालतबाट आदेश]
-    B -->|छैन| D[सामान्य प्रक्रियामा मुद्दा अगाडि बढ्ने]
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    C --> E[केन्द्रीय अधिकारी समक्ष अनुरोध]
-    
-    E --> F[आवश्यक विवरण र कागजात संकलन]
-    F --> G[कागजात प्रमाणीकरण]
-    
-    G --> H{द्विपक्षीय सन्धि छ?}
-    H -->|छ| I[सन्धि अनुसार अनुरोध]
-    H -->|छैन| J[पारस्परिकताको आश्वासन]
-    
-    I --> K[कूटनैतिक माध्यमबाट विदेशी राज्यलाई अनुरोध]
-    J --> K
-    
-    K --> L{विदेशी राज्यको जवाफ}
-    L -->|स्वीकृत| M[सहायता प्राप्त]
-    L -->|अस्वीकृत| N[इन्कार जानकारी]
-    
-    M --> O[कूटनैतिक माध्यमबाट नेपाललाई जानकारी]
-    O --> P[परराष्ट्र मन्त्रालयमा प्राप्त]
-    P --> Q[केन्द्रीय अधिकारी समक्ष पेश]
-    
-    Q --> R[केन्द्रीय अधिकारीद्वारा कागजात अध्ययन र रूजु]
-    R --> S{कागजात रीतपूर्वक छन्?}
-    
-    S -->|छन्| T[सम्बन्धित जिल्ला सरकारी वकील कार्यालयमा पठाउने]
-    S -->|छैनन्| U[थप विवरण वा स्पष्टीकरण माग]
-    U --> O
-    
-    T --> V[जिल्ला सरकारी वकीलद्वारा अदालतमा निवेदन]
-    V --> W[अदालतद्वारा सहायता ग्रहण]
-    
-    W --> X{सहायता पर्याप्त छ?}
-    X -->|छ| Y[मुद्दामा प्रमाणको रूपमा प्रयोग]
-    X -->|छैन| Z[थप सहायता आवश्यक]
-    Z --> C
-    
-    N --> AA[केन्द्रीय अधिकारी मार्फत अदालतलाई जानकारी]
-    AA --> BB[वैकल्पिक उपायको खोजी]
-    BB --> CC[अन्य उपलब्ध प्रमाणको आधारमा निर्णय]
-
-    %% Style definitions with better contrast
-    style A fill:#e6f3ff,stroke:#000000,stroke-width:2px,color:#000000
-    style B fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style C fill:#e6ffe6,stroke:#000000,stroke-width:2px,color:#000000
-    style H fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style L fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style S fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style X fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    
-    %% Adding style to regular nodes for better readability
-    classDef default fill:#ffffff,stroke:#000000,stroke-width:1px,color:#000000
-
-</pre>
-</div>
-</div>
-<div class="container">
-    <h1>MLA process in Nepal</h1>
-    <div class="chart">
-        <pre class="mermaid">
-flowchart TD
-    A[Case Pending in Court] --> B{Is Mutual Legal Assistance Required?}
-    B -->|Yes| C[Court Order]
-    B -->|No| D[Case Proceeds through Normal Process]
-    
-    C --> E[Request to Central Authority]
-    
-    E --> F[Collection of Required Details and Documents]
-    F --> G[Document Authentication]
-    
-    G --> H{Bilateral Treaty Exists?}
-    H -->|Yes| I[Request as per Treaty]
-    H -->|No| J[Assurance of Reciprocity]
-    
-    I --> K[Request to Foreign State through Diplomatic Channel]
-    J --> K
-    
-    K --> L{Foreign State's Response}
-    L -->|Approved| M[Assistance Received]
-    L -->|Rejected| N[Rejection Notice]
-    
-    M --> O[Notification to Nepal through Diplomatic Channel]
-    O --> P[Received at Ministry of Foreign Affairs]
-    P --> Q[Submission to Central Authority]
-    
-    Q --> R[Document Review and Verification by Central Authority]
-    R --> S{Are Documents Properly Formatted?}
-    
-    S -->|Yes| T[Forward to Concerned District Government Attorney Office]
-    S -->|No| U[Request for Additional Information/Clarification]
-    U --> O
-    
-    T --> V[Petition Filed in Court by District Government Attorney]
-    V --> W[Court Acceptance of Assistance]
-    
-    W --> X{Is Assistance Sufficient?}
-    X -->|Yes| Y[Use as Evidence in Case]
-    X -->|No| Z[Additional Assistance Required]
-    Z --> C
-    
-    N --> AA[Court Notified through Central Authority]
-    AA --> BB[Search for Alternative Measures]
-    BB --> CC[Decision Based on Other Available Evidence]
-
-    %% Style definitions with better contrast
-    style A fill:#e6f3ff,stroke:#000000,stroke-width:2px,color:#000000
-    style B fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style C fill:#e6ffe6,stroke:#000000,stroke-width:2px,color:#000000
-    style H fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style L fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style S fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    style X fill:#fff2e6,stroke:#000000,stroke-width:2px,color:#000000
-    
-    %% Adding style to regular nodes for better readability
-    classDef default fill:#ffffff,stroke:#000000,stroke-width:1px,color:#000000
-
-</pre>
-</div>
-</div>
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>
