@@ -59,7 +59,7 @@ function getMergedNotes() {
     "hub",
     "link"
   ],
-  "pinned": false,
+  "pinned": true,
   "isDefault": false
 },
 {
