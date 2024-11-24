@@ -63,6 +63,27 @@ function getMergedNotes() {
   "isDefault": false
 },
     {
+  "id": "20241124-181220-990-0045",
+  "title": "Why FRs must be enshrined in the Constitution?",
+  "subtitle": "",
+  "content": "<h5> Why FRs must be enshrined in the Constitution? </h5>\n\n<b>Introduction</b><br>\nAs a constitutional law expert, this analysis examines why Fundamental Rights must be enshrined in the Constitution, drawing from historical evolution, philosophical foundations, and legal theory.\n\n<b>Historical Evolution and Lessons</b><br>\nThe journey of constitutionalism teaches us a crucial lesson. The first written constitution (U.S. Constitution 1787) initially lacked Fundamental Rights, leading to immediate demands for their inclusion. This resulted in:<br>\n• First Bill of Rights (1791): Adding first 10 amendments<br>\n• Second Bill of Rights (proposed by FDR): Emphasizing socio-economic rights<br>\n• UK's unwritten constitution incorporating rights through historic documents like Petition of Rights (1628)<br>\nThese experiences demonstrate that rights protection cannot be left to ordinary legislation.\n\n<b>Social Contract Theory and Popular Sovereignty</b><br>\nThe Constitution represents the ultimate social contract where:<br>\n• People surrender certain powers to the state (Rousseau's General Will)<br>\n• Fundamental Rights are the consideration for the governed<br>\n• Locke's natural rights (life, liberty, and property) become legally enforceable<br>\n• Rights represent non-negotiable terms of the social contract\n\n<b>Grundnorm and Constitutional Supremacy</b><br>\nFollowing Kelsen's Pure Theory of Law:<br>\n• Constitution stands as the Grundnorm (basic norm)<br>\n• Creates hierarchical legal order where rights are supreme<br>\n• All other laws derive validity from constitutional compliance<br>\n• Forms the foundation of legal system's unity and coherence\n\n<b>Constituent Power and Popular Authority</b><br>\nThe Constitution emerges from constituent power where:<br>\n• People, as sovereign, create the constitution<br>\n• Fundamental Rights represent reserved powers<br>\n• Cannot be challenged as they flow from original constituent power<br>\n• Judiciary, being constitution's creature, cannot review original constitution\n\n<b>Constitutional Identity and Democratic Foundation</b><br>\nFundamental Rights represent:<br>\n• Core of constitutional identity<br>\n• Non-negotiable aspects of democracy<br>\n• Framework for governmental action<br>\n• Basis for constitutional interpretation\n\n<b>Institutional Architecture</b><br>\nConstitutional entrenchment ensures:<br>\n• Special amendment procedures<br>\n• Protection from legislative majorities<br>\n• Judicial review of laws<br>\n• Binding force on all state organs\n\n<b>International Legal Framework</b><br>\nModern constitutionalism demands:<br>\n• Constitutional guarantee of basic rights<br>\n• Removal from ordinary political processes<br>\n• Strong judicial review powers<br>\n• Clear normative hierarchy\n\n<b>Historical Experience</b><br>\nGlobal constitutional history shows that nations which relegated basic rights to ordinary laws faced:<br>\n• Systematic erosion of civil liberties<br>\n• Majoritarian oppression of minorities<br>\n• Executive overreach<br>\n• Legal instability\n\n<b>Examples</b><br>\n• Weimar Republic's collapse partly due to weak constitutional protection of rights<br>\n• The failure of rights protection leading to the rise of authoritarianism<br>\n• Erosion of democratic values when rights lack constitutional safeguards",
+  "created": "2024-11-24T12:27:20.990Z",
+  "lastModified": "2024-11-24T12:27:20.990Z",
+  "category": "General",
+  "tags": [
+    "why",
+    "frs",
+    "must",
+    "be",
+    "enshrined",
+    "in",
+    "the",
+    "constitution?"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
+    {
   "id": "20241123-195835-710-0043",
   "title": "Law Commission in different countries.",
   "subtitle": "",
