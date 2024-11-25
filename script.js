@@ -63,6 +63,35 @@ function getMergedNotes() {
   "isDefault": false
 },
     {
+  "id": "20241125-233955-997-0051",
+  "title": "Quick Links",
+  "subtitle": "",
+  "content": "<a href=\"https://github.com/ShivaPrasadAcharya/actionmatrix.git.io/edit/main/script.js\" target=\"_blank\">Visit Action Plan in GitHub Page</a>\n\n {url: \"https://shivaprasadacharya.github.io/flowchat2.git.io/\",    title: \" Flowchart2\",    editUrl: \"https://github.com/ShivaPrasadAcharya/flowchat2.git.io/edit/main/data.js\", description: \"Interactive flowchart visualization, advanced flowchart, timeline, chart2\",},",
+  "created": "2024-11-25T17:54:55.997Z",
+  "lastModified": "2024-11-25T17:54:55.997Z",
+  "category": "General",
+  "tags": [
+    "quick",
+    "links"
+  ],
+  "pinned": false,
+  "isDefault": false
+},
+    {
+  "id": "20241125-234052-109-0050",
+  "title": "flowchart2",
+  "subtitle": "github manual input (head and tail)",
+  "content": "<a href=\"https://github.com/ShivaPrasadAcharya/flowchat2.git.io/edit/main/data.js\" target=\"_blank\">Visit flowchart2 </a>\n{\n    id: '00  ',\n    title: '   ',\n    language: 'np',\n    collector: 'सङ्कलनकर्ताः शिवप्रसादाचार्यः (२०८१)',\n    organization: 'सर्वोच्च अदालत',\n    diagram: `\n\n\n    style A fill:#2b6cb0,stroke:#1a365d,stroke-width:2px,color:black`\n },",
+  "created": "2024-11-25T17:55:52.109Z",
+  "lastModified": "2024-11-25T17:55:52.109Z",
+  "category": "General",
+  "tags": [
+    "flowchart2"
+  ],
+  "pinned": true,
+  "isDefault": false
+}
+    {
   "id": "20241124-181220-990-0045",
   "title": "Why FRs must be enshrined in the Constitution?",
   "subtitle": "",
