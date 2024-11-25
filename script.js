@@ -46,12 +46,12 @@ function loadFromLocalStorage() {
 function getMergedNotes() {
   const defaultNotes = [
    {
-  "id": "20241125-233652-022-0000",
+  "id": "20241125-234942-612-0000",
   "title": "Open git hub link",
   "subtitle": "edit mode",
-  "content": "<a href=\"https://github.com/ShivaPrasadAcharya/links.git.io/edit/main/index.html\" target=\"_blank\"> LINKS in Github </a>\n\n<a href=\"https://github.com/ShivaPrasadAcharya/NOTES.git.io/edit/main/script.js\" target=\"_blank\">SMART NOTES - GitHub</a>",
-  "created": "2024-11-25T17:51:52.022Z",
-  "lastModified": "2024-11-25T17:51:52.022Z",
+  "content": "<a href=\"https://github.com/ShivaPrasadAcharya/NOTES.git.io/edit/main/script.js\" target=\"_blank\">SMART NOTES - GitHub</a><br>",
+  "created": "2024-11-25T18:04:42.612Z",
+  "lastModified": "2024-11-25T18:04:42.612Z",
   "category": "General",
   "tags": [
     "open",
@@ -59,7 +59,7 @@ function getMergedNotes() {
     "hub",
     "link"
   ],
-  "pinned": true,
+  "pinned": false,
   "isDefault": false
 },
     {
