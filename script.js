@@ -45,23 +45,7 @@ function loadFromLocalStorage() {
 // Function to merge default and saved notes
 function getMergedNotes() {
   const defaultNotes = [
-   {
-  "id": "20241125-234942-612-0000",
-  "title": "Open git hub link",
-  "subtitle": "edit mode",
-  "content": "<a href=\"https://github.com/ShivaPrasadAcharya/NOTES.git.io/edit/main/script.js\" target=\"_blank\">SMART NOTES - GitHub</a><br>",
-  "created": "2024-11-25T18:04:42.612Z",
-  "lastModified": "2024-11-25T18:04:42.612Z",
-  "category": "General",
-  "tags": [
-    "open",
-    "git",
-    "hub",
-    "link"
-  ],
-  "pinned": true,
-  "isDefault": false
-},
+   
     {
   "id": "20241125-233955-997-0051",
   "title": "Quick Links",
