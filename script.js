@@ -66,7 +66,7 @@ function getMergedNotes() {
   "id": "20241125-233652-022-0052",
   "title": "Open git hub LINKS",
   "subtitle": "edit mode",
-  "content": "<a href=\"https://github.com/ShivaPrasadAcharya/links.git.io/edit/main/index.html\" target=\"_blank\"> LINKS in Github </a>\n\n<a href=\"https://github.com/ShivaPrasadAcharya/NOTES.git.io/edit/main/script.js\" target=\"_blank\">SMART NOTES - GitHub</a>",
+  "content": "<a href=\"https://github.com/ShivaPrasadAcharya/links.git.io/edit/main/index.html\" target=\"_blank\"> LINKS in Github </a>",
   "created": "2024-11-25T17:51:52.022Z",
   "lastModified": "2024-11-25T17:51:52.022Z",
   "category": "General",
