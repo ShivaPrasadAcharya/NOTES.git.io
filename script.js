@@ -74,7 +74,7 @@ function getMergedNotes() {
     "quick",
     "links"
   ],
-  "pinned": false,
+  "pinned": true,
   "isDefault": false
 },
     {
@@ -88,7 +88,7 @@ function getMergedNotes() {
   "tags": [
     "flowchart2"
   ],
-  "pinned": false,
+  "pinned": true,
   "isDefault": false
 },
     {
