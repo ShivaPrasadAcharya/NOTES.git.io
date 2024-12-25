@@ -45,6 +45,7 @@ function loadFromLocalStorage() {
 // Function to merge default and saved notes
 function getMergedNotes() {
   const defaultNotes = [
+    
    {
   "id": "20241125-234942-612-0000",
   "title": "Open SMART NOTES in github",
@@ -60,6 +61,21 @@ function getMergedNotes() {
     "link"
   ],
   "pinned": true,
+  "isDefault": false
+},
+    {
+  "id": "20241225-121307-723-0053",
+  "title": "LLM. friends",
+  "subtitle": "2075-2078",
+  "content": "1. Anuj Pokharel\n2. Bharat Bdr Bista\n3. Bhim Bdr Phadera\n4. Bipana Chapagain\n5. Chiranjibi Basnet\n6. Dibya Kharel\n7. Dil Maya Yonjan\n8. Dipak Khanal\n9. Dipak Kumar Sah\n10. Giri Raj Aryal\n11. Jagat Jang Bam Khati\n12. Kali Bahadur Samyu\n13. Kamal Kant Joshi\n14. Karuna Timlsina\n15. Khina Devi Dhakal\n16. Kopila Rai\n17. Lokhari Paudel\n18. Manju Kumari Pokharel\n19. Neetu Shahu\n20. Nutan Chandra Subedi\n21. Parbati Lohani\n22. Pratik Khadka\n23. Pratima Dahal\n24. Puskar Ghimire\n25. Rabina Ghimire\n26. Rima Karki\n27. Ritesh Rajthala\n28. Rudra Kumar Dhamala\n29. Sabin Raj Pandey\n30. Samjhana Baral\n31. Sanjay Timalsina\n32. Sanjila KC\n33. Satyam Limbu\n34. Sharmila Regmi\n35. Shiva Prasad Acharya\n36. Subash Bhandari\n37. Sudiksha Dawadi\n38. Sumedha Khanal\n39. Sunam Lamichhane\n40. Suresh Bohara\n41. Tika Raj Chaulagain\n42. Sarita",
+  "created": "2024-12-25T06:28:07.724Z",
+  "lastModified": "2024-12-25T06:28:07.724Z",
+  "category": "General",
+  "tags": [
+    "llm.",
+    "friends"
+  ],
+  "pinned": false,
   "isDefault": false
 },
     {
